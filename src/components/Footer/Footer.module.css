@@ -1,0 +1,10 @@
+.Footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw
+}
+
+.NavLink {
+    color: #17a2b8 !important;
+    text-decoration: none;
+}

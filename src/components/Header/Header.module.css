@@ -1,0 +1,9 @@
+.Header {
+    color: whitesmoke;
+    background-color: inherit;
+    padding: 3% 3% 3% 3%;
+}
+
+.SubHeader {
+    opacity: .75;
+}

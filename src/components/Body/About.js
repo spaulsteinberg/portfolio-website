@@ -1,11 +1,11 @@
 import React from 'react'
 
-const home = () => {
+const about = () => {
     return (
         <div className="text-white">
-            Home data
+            About
         </div>
     )
 }
 
-export default home;
+export default about;

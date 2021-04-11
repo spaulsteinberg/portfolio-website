@@ -5,6 +5,7 @@ import Home from './components/Body/Home';
 import About from './components/Body/About';
 import Resume from './components/Body/Resume';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import NotFound from './components/Body/NotFound';
 
 class App extends Component {
   render(){
@@ -20,6 +21,9 @@ class App extends Component {
             </Route>
             <Route exact path="/resume">
               <Resume />
+            </Route>
+            <Route exact path="*">
+              <NotFound />
             </Route>
           </Switch>
         </Root>

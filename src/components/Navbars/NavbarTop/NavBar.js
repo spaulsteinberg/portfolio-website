@@ -6,10 +6,10 @@ const navbar = () => {
     return (
         <React.Fragment>
             <nav className="navbar navbar-dark bg-dark justify-content-start">
-                <NavLink activeClassName={classes.NavlinkActive} className="navbar-brand" to="/">Home</NavLink>
-                <NavLink activeClassName={classes.NavlinkActive} className="navbar-brand" to="/about">About</NavLink>
-                <NavLink activeClassName={classes.NavlinkActive} className="navbar-brand" to="#1">Contact</NavLink>
-                <NavLink activeClassName={classes.NavlinkActive} className="navbar-brand" to="/resume">Resume</NavLink>
+                <NavLink exact activeStyle={{color: 'red'}} activeClassName={classes.NavlinkActive} className="navbar-brand current-page" to="/">Home</NavLink>
+                <NavLink activeStyle={{color: 'red'}} className="navbar-brand current-page" to="/about">About</NavLink>
+                <NavLink activeStyle={{color: 'red'}} className="navbar-brand current-page" to="/contact">Contact</NavLink>
+                <NavLink activeStyle={{color: 'red'}} className="navbar-brand current-page" to="/resume">Resume</NavLink>
             </nav>
         </React.Fragment>
     )

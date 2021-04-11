@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import Header from './Header/Header';
+import React, { Component } from 'react';
 import Navbar from './Navbars/NavbarTop/NavBar';
 import Footer from './Navbars/Footer/Footer';
 
@@ -9,11 +8,6 @@ class Root extends Component {
             <React.Fragment>
                 <Navbar />
                 <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <Header />
-                        </div>
-                    </div>
                     <div className="row">
                         <div className="col-md-12">
                             <main>

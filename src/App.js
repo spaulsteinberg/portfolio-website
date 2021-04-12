@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NotFound from './components/Body/NotFound';
 
 class App extends Component {
+
   render(){
     return (
       <Router>

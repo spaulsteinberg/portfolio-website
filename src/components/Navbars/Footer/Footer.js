@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './Footer.module.css';
-import linkedin_icon from '../../../assets/linkedin_icon.png';
-import github_logo from '../../../assets/github_full.png';
-import gmail_icon from '../../../assets/gmail_icon.png'
+import linkedin_icon from '../../../assets/images/linkedin_icon.png';
+import github_logo from '../../../assets/images/github_full.png';
+import gmail_icon from '../../../assets/images/gmail_icon.png'
 
 const footer = () => {
     let navClass = `navbar navbar-bottom navbar-dark bg-dark justify-space-between text-info ${classes.Footer}`

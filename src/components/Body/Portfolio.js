@@ -1,15 +1,15 @@
 import React from 'react';
 import Header from '../Header/Header';
 
-const home = () => {
+const Portfolio = () => {
     return (
         <React.Fragment>
             <Header />
             <div className="text-white">
-                Home
+                portfolio
             </div>
         </React.Fragment>
     )
 }
 
-export default home;
+export default Portfolio;

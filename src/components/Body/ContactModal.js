@@ -14,11 +14,17 @@ class ContactModal extends PureComponent {
         message: ''
     }
 
+    componentWillUnmount(){
+        console.log("unmounting contact modal...")
+        if(this.timer) clearTimeout(this.timer);
+    }
+
     sendButtonClickHandler = event => {
         //TODO -> send request
         event.preventDefault();
         console.log("send clicked")
-        setTimeout(() => {
+        // if not closed, close modal
+        this.timer = setTimeout(() => {
             console.log("timing...")
             this.props.close();
             this.setState({
@@ -27,7 +33,7 @@ class ContactModal extends PureComponent {
                 email: '',
                 message: ''
             })
-        }, 2000)
+        }, 1000)
     }
 
     inputTypeChangeHandler = event => {

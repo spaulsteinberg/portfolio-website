@@ -6,10 +6,10 @@ const navbar = ({modalClick}) => {
     return (
         <React.Fragment>
             <nav className="navbar navbar-dark bg-dark justify-content-start">
-                <NavLink exact activeStyle={{color: 'red'}} activeClassName={classes.NavlinkActive} className="navbar-brand current-page" to="/">Home</NavLink>
-                <NavLink activeStyle={{color: 'red'}} className="navbar-brand current-page" to="/about">About</NavLink>
+                <NavLink exact activeStyle={{color: '#fe9677'}} activeClassName={classes.NavlinkActive} className="navbar-brand current-page" to="/">Portfolio</NavLink>
+                <NavLink activeStyle={{color: '#fe9677'}} className="navbar-brand current-page" to="/about">About</NavLink>
                 <button className={classes.NavButton} onClick={modalClick}>Contact</button>
-                <NavLink activeStyle={{color: 'red'}} className="navbar-brand current-page" to="/resume">Resume</NavLink>
+                <NavLink activeStyle={{color: '#fe9677'}} className="navbar-brand current-page" to="/resume">Resume</NavLink>
             </nav>
         </React.Fragment>
     )

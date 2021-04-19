@@ -1,6 +1,3 @@
-.NavlinkActive {
-    color: orange;
-}
 .NavButton {
     background: none!important;
     border: none;
@@ -14,4 +11,8 @@
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+}
+
+.NavButton:hover {
+    color: #b82601;
 }

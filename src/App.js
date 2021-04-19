@@ -1,11 +1,11 @@
 import './App.css';
 import React, { Component } from 'react';
-import Root from './components/Root'
-import Home from './components/Body/Home';
-import About from './components/Body/About';
+import Root from './components/Root';
+import About from './components/Body/About/About';
 import Resume from './components/Body/Resume';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NotFound from './components/Body/NotFound';
+import Portfolio from './components/Body/Portfolio';
 
 class App extends Component {
 
@@ -15,7 +15,7 @@ class App extends Component {
         <Root>
           <Switch>
             <Route exact path="/">
-              <Home />
+              <Portfolio />
             </Route>
             <Route exact path="/about">
               <About />

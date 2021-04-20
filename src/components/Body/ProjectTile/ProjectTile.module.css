@@ -6,12 +6,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .ProjectContainer {
     padding-bottom: 1%;
-    background-size: 98% 98%;
-    background-repeat: no-repeat;
+    overflow: hidden;
 }
 .ViewButton {
     color: red;

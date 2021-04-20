@@ -24,7 +24,7 @@ const about = () => {
                         along with a minor In Cybersecurity.
                     </p>
                     <p>
-                        I am passionate about full-stack development and am a self-taught web developer.
+                        I am passionate about full-stack development and a self-taught web developer.
                         Always wanting to 'make stuff happen when users click the screen', I began learning
                         interactive web code after my college graduation, though began CSS and HTML for fun
                         a few years earlier. Soon after came writing custom API's using the REST architectural pattern.

@@ -1,0 +1,33 @@
+.Project {
+    color: white;
+    height: 40vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProjectContainer {
+    padding-bottom: 1%;
+    background-size: 98% 98%;
+    background-repeat: no-repeat;
+}
+.ViewButton {
+    color: red;
+    font-weight: bolder;
+    animation: ripple 2s infinite .5s;
+}
+.ViewButton:hover {
+    border: 1px solid orange;
+    color: orange;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 .7rem rgba(255,165,0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 3rem rgba(255,165,0, 0);
+    }
+}

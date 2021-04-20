@@ -3,7 +3,7 @@ import resume_doc from '../../assets/pdfs/ResumeSamuelSteinberg.pdf'
 
 const resume = () => {
     return (
-        <div className="text-white justify-content-center text-center" style={{height: '100vh', padding: '0 0 10% 0'}}>
+        <div className="text-white justify-content-center text-center" style={{height: '100vh', padding: '0 0 7% 0'}}>
             <div>
                 <h2 className="display-4">My Resume</h2>
             </div>

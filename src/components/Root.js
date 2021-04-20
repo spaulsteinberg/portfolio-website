@@ -19,7 +19,7 @@ class Root extends Component {
                         <div className="row">
                             <div className="col-md-12">
                                 <main>
-                                {this.props.children}
+                                    {this.props.children}
                                 </main>
                             </div>
                         </div>

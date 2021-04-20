@@ -2,9 +2,14 @@
     position: fixed;
     bottom: 0;
     width: 100vw;
+    justify-content: space-around;
 }
 
 .NavLink {
     color: #17a2b8 !important;
     text-decoration: none;
+}
+
+.NavContainer {
+    padding-top: 3%;
 }

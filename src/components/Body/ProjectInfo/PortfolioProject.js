@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import InfoHeader from './sub-components/InfoHeader';
 
 const PortfolioProject = () => {
+    const title = 'Portfolio Website';
     return (
-        <div>
-            I am portfolio
-        </div>
+        <React.Fragment>
+            <InfoHeader title={title} />
+        </React.Fragment>
     )
 }
 

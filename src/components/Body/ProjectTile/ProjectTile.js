@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import classes from './ProjectTile.module.css'
 
-const Project = ({cover, extension, title}) => {
+const ProjectTile = ({cover, extension, title}) => {
     let containerStyles = `col col-md-6 ${classes.ProjectContainer}`;
     let contentStyles = `${classes.Project} text-center`;
     let buttonLinkStyles = `${classes.ViewButton} btn btn-lg`
@@ -17,4 +17,4 @@ const Project = ({cover, extension, title}) => {
         </div>
     )
 }
-export default Project;
+export default ProjectTile;

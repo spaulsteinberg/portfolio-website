@@ -1,10 +1,12 @@
 import React from 'react'
+import InfoHeader from './sub-components/InfoHeader';
 
 const AnimationProject = () => {
+    const title = 'CSS - SVG Animations';
     return (
-        <div>
-            I am animation
-        </div>
+        <React.Fragment>
+            <InfoHeader title={title} />
+        </React.Fragment>
     )
 }
 

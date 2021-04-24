@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import InfoHeader from './sub-components/InfoHeader';
 
 const GithubProject = () => {
+    const title = 'GitHub-Infused Personal Site'
     return (
-        <div>
-            I am github
-        </div>
+        <React.Fragment>
+            <InfoHeader title={title} />
+        </React.Fragment>
     )
 }
 

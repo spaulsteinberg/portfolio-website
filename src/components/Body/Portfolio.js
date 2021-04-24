@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
-import Project from './ProjectTile/ProjectTile';
 import {ProjectPaths as paths} from '../../constants/ProjectPaths';
+import ProjectTile from './ProjectTile/ProjectTile';
 
 const Portfolio = () => {
     let projects = 
@@ -18,12 +18,7 @@ const Portfolio = () => {
         },
         {
             id: 2,
-            title: 'Stock Tracking Website',
-            description: 'Real time stock tracking website',
-            stack: ['Angular 9', 'TypeScript', 'JavaScript','JWT authentication', 'Angular Material', 'Node.js', 'Express.js',
-                        'MongoDB', 'IEX Cloud', 'Bootstrap 4', 'FullCalendar', 'D3.js', 'Python'],
             cover: 'stock/stock-trace-home-sm.PNG',
-            photoAddresses: [],
             extension: paths.STOCK
         },
         {
@@ -49,7 +44,7 @@ const Portfolio = () => {
         <React.Fragment>
             <Header />
             <div className="row">
-                {projects.map(project => <Project key={project.id} 
+                {projects.map(project => <ProjectTile key={project.id} 
                                                   cover={project.cover} 
                                                   extension={project.extension} />)}
             </div>

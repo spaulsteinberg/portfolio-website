@@ -3,7 +3,8 @@ import PhotoAddress from '../../../models/PhotoAddress';
 import InfoHeader from './sub-components/InfoHeader';
 
 const StockTraceProject = () => {
-    const title = 'Stock Tracking Website';
+    const title = "StockTrace"
+    const subTitleText = "A lightweight tool to track growth and experiment in a risk-free environment.";
     const stack = ['Angular 9', 'TypeScript', 'JavaScript','JWT authentication', 'Angular Material', 'Node.js', 'Express.js',
             'MongoDB', 'IEX Cloud', 'Bootstrap 4', 'FullCalendar', 'D3.js', 'Python'];
     const photoAddresses = [
@@ -21,10 +22,17 @@ const StockTraceProject = () => {
         new PhotoAddress(11, "stock/realtime-watchlist.PNG"),
         new PhotoAddress(12, "stock/stock-trace-home.PNG"),
     ];
+    const backgroundTitleImage = "stock/compare-charts-crop.png";
     const description = 'Real time stock tracking website';
     return (
         <React.Fragment>
-            <InfoHeader title={title} carouselItems={photoAddresses} stack={stack} description={description}/>
+            <InfoHeader 
+                title={title}
+                subTitleText={subTitleText}
+                carouselItems={photoAddresses} 
+                stack={stack} 
+                description={description}
+                backgroundImg={backgroundTitleImage}/>
         </React.Fragment>
     )
 }

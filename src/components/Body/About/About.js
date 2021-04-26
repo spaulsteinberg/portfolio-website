@@ -12,7 +12,7 @@ const about = () => {
             </div>
             <div className="row text-white">
                 <div className={imageClass}>
-                <img src={head_photo} alt="sam_steinberg_photo.jpg" className="img-fluid img-thumbnail rounded"/>
+                    <img src={head_photo} alt="sam_steinberg_photo.jpg" className="img-fluid img-thumbnail rounded"/>
                 </div>
                 <div className={textClass}>
                     <p>

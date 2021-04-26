@@ -7,3 +7,8 @@
 .SubHeader {
     opacity: .75;
 }
+
+.ResumeLink {
+    text-decoration: underline;
+    color:white;
+}

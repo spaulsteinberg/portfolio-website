@@ -1,8 +1,6 @@
 import React, {PureComponent} from 'react';
-import classes from './InfoHeader.module.css';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import ImageCarousel from './ImageCarousel';
+import styles from './ProjectInfo.module.css';
 
 class InfoHeader extends PureComponent {
     state = {
@@ -14,33 +12,23 @@ class InfoHeader extends PureComponent {
             slidesToScroll: 1
         }
     };
-//style={{backgroundImage: `url(${process.env.PUBLIC_URL}/public-project-images/${cover})`}}
-    configureSliderItems = () => {
-        return this.props.carouselItems.map(photo => {
-            return <div key={photo.address} className={classes.ItemContainer}>
-                        <img className={classes.CarouselItem} alt="carousel-item" src={`${window.location.origin}/public-project-images/${photo.address}`} />
-                        {photo.additionalInfo ? <small className="text-danger">*{photo.additionalInfo}</small> : null}
-                   </div>
-        }
-        )
-    }
-
 
     render(){
         return (
             <React.Fragment>
-                <div className={classes.InfoHeader}>
-                    <div className="text-center my-3 mx-3">
-                        <h2 className="display-4">{this.props.title}</h2>
+                <div className={styles.InfoHeader} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/public-project-images/${this.props.backgroundImg})`}}>
+                    <div className={styles.HeaderContainer}>
+                        <h2 className="display-2">{this.props.title}</h2>
+                        <h4 className="display-4">{this.props.subTitleText}</h4>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col col-md-6 offset-md-3">
-                        <Slider {...this.state.slider} className={classes.Carousel}>
-                            {this.configureSliderItems()}
-                        </Slider>
+                <div className="row text-white">
+                    <div className="col col-md-8 offset-md-2">
+                        {this.props.description}
+                        <p>StockTrace was imagined when I was consistently </p>
                     </div>
                 </div>
+                <ImageCarousel settings={this.state.slider} images={this.props.carouselItems} />
             </React.Fragment>
         )
     }

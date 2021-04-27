@@ -1,5 +1,6 @@
 import React, {PureComponent} from 'react';
 import ImageCarousel from './ImageCarousel';
+import InfoBody from './InfoBody';
 import styles from './ProjectInfo.module.css';
 
 class InfoHeader extends PureComponent {
@@ -22,12 +23,7 @@ class InfoHeader extends PureComponent {
                         <h4 className="display-4">{this.props.subTitleText}</h4>
                     </div>
                 </div>
-                <div className="row text-white">
-                    <div className="col col-md-8 offset-md-2">
-                        {this.props.description}
-                        <p>StockTrace was imagined when I was consistently </p>
-                    </div>
-                </div>
+                <InfoBody description={this.props.description} />
                 <ImageCarousel settings={this.state.slider} images={this.props.carouselItems} />
             </React.Fragment>
         )

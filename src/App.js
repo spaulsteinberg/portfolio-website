@@ -15,7 +15,6 @@ import AnimationProject from './components/Body/ProjectInfo/AnimationProject';
 class App extends Component {
 
   renderDynamicProjectPaths = (path) => {
-    console.log(path)
     let pathToMatch = `/${path}`
     switch(pathToMatch) {
       case ProjectPaths.GITHUB:

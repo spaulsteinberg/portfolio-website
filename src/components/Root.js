@@ -17,7 +17,7 @@ class Root extends Component {
                 <React.StrictMode>
                     <div className="container-fluid">
                         <div className="row">
-                            <div className="col-md-12">
+                            <div className="col-md-12 m-0 p-0">
                                 <main>
                                     {this.props.children}
                                 </main>

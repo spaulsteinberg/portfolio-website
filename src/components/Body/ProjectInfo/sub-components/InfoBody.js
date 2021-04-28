@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import styles from './ProjectInfo.module.css';
 
-const InfoBody = ({description}) => {
+const InfoBody = ({description, stack}) => {
+    const bodyContainerStyles = `row lead ${styles.BodyText}`
     return (
-        <div className="row text-white">
-            <div className="col col-md-8 offset-md-2" dangerouslySetInnerHTML={{__html: description}}>
+        <div className={bodyContainerStyles}>
+            
+            <div className="col-md-8 offset-md-1">
+                <h1 className="display-4 text-success">Summary</h1>
+                <div dangerouslySetInnerHTML={{__html: description}}></div>
+            </div>
+            <div className="col-md-3">
+                <h1 className="display-4 text-success">Tech Stack</h1>
+                <ul>
+                    {stack.map(s => <li key={s}>{s}</li>)}
+                </ul>
             </div>
         </div>
     )

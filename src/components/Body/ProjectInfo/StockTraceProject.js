@@ -1,12 +1,14 @@
 import React from 'react';
 import PhotoAddress from '../../../models/PhotoAddress';
 import InfoHeader from './sub-components/InfoHeader';
+import InfoBody from './sub-components/InfoBody';
+import ImageCarousel from './sub-components/ImageCarousel';
 
 const StockTraceProject = () => {
     const title = "StockTrace"
     const subTitleText = "A lightweight tool to track growth and experiment in a risk-free environment.";
-    const stack = ['Angular 9', 'TypeScript', 'JavaScript','JWT authentication', 'Angular Material', 'Node.js', 'Express.js',
-            'MongoDB', 'IEX Cloud', 'Bootstrap 4', 'FullCalendar', 'D3.js', 'Python'];
+    const stack = ['Angular 9', 'TypeScript', 'JavaScript', 'Python', 'Node.js', 'Express.js', 'D3.js','JWT authentication', 'Angular Material',
+            'MongoDB', 'IEX Cloud Console', 'Bootstrap 4', 'FullCalendar', 'Chart.js'];
     const photoAddresses = [
         new PhotoAddress(0, "stock/accounts-view.PNG"),
         new PhotoAddress(1, "stock/compare-dividends.PNG", "IEX Cloud API discontinued earnings endpoint :("),
@@ -23,11 +25,13 @@ const StockTraceProject = () => {
         new PhotoAddress(12, "stock/stock-trace-home.PNG"),
     ];
     const backgroundTitleImage = "stock/compare-charts-crop.png";
-    const description = `<p>
-        StockTrace was imagined when I was consistently going back and forth between real-time quote sources,
-        my portfolio, and finally my calculator to determine whether a stock was worth purchasing (not to mention how much of it).
-        Multiply this by each stock you are thinking of buying, and you are in for a lot of time spent just searching.
-        Not to mention convoluted visuals and boatloads of information the average investor simply does not care about.
+    const titleDisplayColor = "white";
+    const description = `
+        <p>
+            StockTrace was imagined when I was consistently going back and forth between real-time quote sources,
+            my portfolio, and finally my calculator to determine whether a stock was worth purchasing (not to mention how much of it).
+            Multiply this by each stock you are thinking of buying, and you are in for a lot of time spent just searching.
+            Not to mention convoluted visuals and boatloads of information the average investor simply does not care about.
         </p>
         <p>
             I decided to come up with a solution. A project that offers real-time ticker quotes, easy chart visualizations,
@@ -50,15 +54,11 @@ const StockTraceProject = () => {
         </p>`
     return (
         <React.Fragment>
-            <InfoHeader 
-                title={title}
-                subTitleText={subTitleText}
-                carouselItems={photoAddresses} 
-                stack={stack} 
-                description={description}
-                backgroundImg={backgroundTitleImage}/>
+            <InfoHeader title={title} subTitleText={subTitleText} backgroundImg={backgroundTitleImage} display={titleDisplayColor}/>
+            <InfoBody description={description} stack={stack} />
+            <ImageCarousel images={photoAddresses} />
         </React.Fragment>
     )
 }
 
-export default React.memo(StockTraceProject)
+export default React.memo(StockTraceProject);

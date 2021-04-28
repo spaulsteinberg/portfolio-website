@@ -5,7 +5,7 @@ import styles from './Resume.module.css'
 const resume = () => {
     return (
         <div className={styles.Resume}>
-            <div>
+            <div className="m-3">
                 <h2 className="display-4">My Resume</h2>
             </div>
             <div className="row h-100 p-4">

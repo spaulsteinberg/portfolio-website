@@ -16,14 +16,27 @@ class ImageCarousel extends PureComponent {
         )
     }
     render() {
+        const headerStyle = `row ${styles.CarouselHeader}`;
+        const sliderOptions = {
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
         return (
-            <div className="row">
-                <div className="col col-md-6 offset-md-3">
-                    <Slider {...this.props.settings} className={styles.Carousel}>
-                        {this.configureSliderItems()}
-                    </Slider>
+            <React.Fragment>
+                <div className={headerStyle}>
+                    <h1 className="display-4">Gallery</h1>
                 </div>
-            </div>
+                <div className="row">
+                    <div className="col col-md-6 offset-md-3">
+                        <Slider {...sliderOptions} className={styles.Carousel}>
+                            {this.configureSliderItems()}
+                        </Slider>
+                    </div>
+                </div>
+            </React.Fragment>
         )
     }
 }

@@ -8,12 +8,7 @@ const Portfolio = () => {
     [
         {
             id: 1,
-            title: 'GitHub-Infused Personal Site',
-            description: 'Description here',
-            stack: ['Angular 9', 'Typescript', 'GitHub API', 'Node.js', 'Express.js', 'Google Analytics', 'Google Analytics API',
-                        'SQL', 'Twilio', 'Nodemailer', 'Bootstrap 4'],
             cover: 'github/cover-sm.PNG',
-            photoAddresses: [],
             extension: paths.GITHUB
         },
         {
@@ -32,11 +27,7 @@ const Portfolio = () => {
         },
         {
             id: 4,
-            title: 'CSS - SVG Animations',
-            description: 'Animations made to learn css and svg',
-            stack: ['HTML', 'CSS', 'SVG'],
             cover: 'first-proj/shooting-star-cover-sm.PNG',
-            photoAddresses: [],
             extension: paths.ANIMATIONS
         }
     ];

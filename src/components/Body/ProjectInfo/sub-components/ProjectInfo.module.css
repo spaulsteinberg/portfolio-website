@@ -1,5 +1,4 @@
 .InfoHeader {
-    color: white;
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vh;
@@ -30,4 +29,18 @@
 
 .ItemContainer {
     text-align: center;
+}
+
+.BodyText {
+    color: white;
+    text-align: left;
+    justify-content: left;
+    padding: 3% 0 1% 0;
+}
+
+.CarouselHeader {
+    color: #28a745 !important;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1%;
 }

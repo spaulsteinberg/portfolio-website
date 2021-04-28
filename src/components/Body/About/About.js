@@ -1,18 +1,51 @@
 import React from 'react';
 import head_photo from '../../../assets/images/abt_page_headshot3.jpeg';
+import capitol_summer_2020 from '../../../assets/images/dc_pic.jpg';
+import ferrari_lv_2017 from '../../../assets/images/vegas_race_ferrari.jpg';
+import atl_2019 from '../../../assets/images/atlanta_2019.jpg';
 import classes from './About.module.css';
 
 const about = () => {
-    let imageClass = `col-md-4 ${classes.AboutImage}`;
+    let imageClass = `col-md-5 offset-md-1 ${classes.AboutImage}`;
     let textClass = `col-md-3 ${classes.AboutText}`;
+    console.log(window.screen.height, window.screen.width)
+    let imageSizes = {
+        headshot: {
+            height: window.screen.height * .369,
+            width: window.screen.width * .18
+        },
+        capitol: {
+            height: window.screen.height * .22,
+            width: window.screen.width * .13,
+            top: 0
+        },
+        ferrari: {
+            height: window.screen.height * .23,
+            width: window.screen.width * .31
+        },
+        atlanta: {
+            height: window.screen.height * .149,
+            width: window.screen.width * .13
+        }
+    }
+    const imageBootstrapStyles = "img-fluid img-thumbnail rounded";
     return (
         <React.Fragment>
             <div className="row text-center justify-content-center text-white">
-                <h2 className="display-4 m-3">About Me</h2>
+                <h2 className="display-4 m-4">About Me</h2>
             </div>
-            <div className="row text-white">
+            <div className="row text-white mt-3">
                 <div className={imageClass}>
-                    <img src={head_photo} alt="sam_steinberg_photo.jpg" className="img-fluid img-thumbnail rounded"/>
+                    <div className="row">
+                        <img src={head_photo} alt="sam_steinberg_photo.jpg" className={imageBootstrapStyles} style={imageSizes.headshot}/>
+                        <div className="col-5 p-0">
+                            <img src={capitol_summer_2020} alt="capitol_pic_2020.jpg" className={imageBootstrapStyles} style={imageSizes.capitol} />
+                            <img src={atl_2019} alt="atlanta2019.jpg" className={imageBootstrapStyles} style={imageSizes.atlanta} />
+                        </div>
+                    </div>
+                    <div className="row">
+                        <img src={ferrari_lv_2017} alt="ferrari458.jpg" className={imageBootstrapStyles} style={imageSizes.ferrari} />
+                    </div>
                 </div>
                 <div className={textClass}>
                     <p>

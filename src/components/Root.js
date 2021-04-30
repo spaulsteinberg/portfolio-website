@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbars/NavbarTop/NavBar';
 import Footer from './Navbars/Footer/Footer';
-import ContactModal from './Body/ContactModal';
+import ContactModal from './Body/ContactModal/ContactModal';
 
 class Root extends Component {
     state = { showModal: false }

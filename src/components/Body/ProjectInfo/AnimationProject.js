@@ -24,7 +24,8 @@ const AnimationProject = () => {
             </p>
             <p>
                 There are three finished projects here, all done in 2018. They are great for background screens
-                and for viewing. I hope to be able to pick these back up in my spare time and add to it here.
+                and for viewing. I hope to be able to pick these back up in my spare time and add to it here, in addition
+                to finishing up ones that are only partially complete.
                 Note that the quality is not as sharp as it should be, since free gif libraries tend to not yield the 
                 finest quality &#128578;.
             </p>`;

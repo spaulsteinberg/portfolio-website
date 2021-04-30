@@ -9,7 +9,7 @@ class ImageCarousel extends PureComponent {
     configureSliderItems = () => {
         return this.props.images.map(image => {
             return <div key={image.address} className={styles.ItemContainer}>
-                        <img className={styles.CarouselItem} alt="carousel-item" src={`${window.location.origin}/public-project-images/${image.address}`} />
+                        <img className={styles.CarouselItem} alt="carousel-item" src={`${process.env.PUBLIC_URL}/public-project-images/${image.address}`} />
                         {image.additionalInfo ? <small className="text-danger">*{image.additionalInfo}</small> : null}
                    </div>
         }

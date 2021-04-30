@@ -9,7 +9,7 @@ const GithubProject = () => {
     const subTitleText = "A website that mixes GitHub code, Google Analytics, and a portfolio all in one.";
     const backgroundImage = "github/sm.png";
     const titleDisplayColor = "purple";
-    const stack = ['Angular 9', 'Typescript', 'GitHub API', 'Node.js', 'Express.js', 'Google Analytics', 'Google Analytics API',
+    const stack = ['Angular 9', 'Typescript', 'GitHub API', 'Node.js', 'Express.js', 'RxJS 6', 'Google Analytics', 'Google Analytics API',
                 'SQL', 'Twilio', 'Nodemailer', 'Bootstrap 4', 'Chart.js'];
     const description = `
                 <p>

@@ -7,7 +7,7 @@ import ImageCarousel from './sub-components/ImageCarousel';
 const StockTraceProject = () => {
     const title = "StockTrace"
     const subTitleText = "A lightweight tool to track growth and experiment in a risk-free environment.";
-    const stack = ['Angular 9', 'TypeScript', 'JavaScript', 'Python', 'Node.js', 'Express.js', 'D3.js','JWT authentication', 'Angular Material',
+    const stack = ['Angular 9', 'TypeScript', 'JavaScript', 'Python', 'Node.js', 'Express.js', 'RxJS 6', 'D3.js','JWT authentication', 'Angular Material',
             'MongoDB', 'IEX Cloud Console', 'Bootstrap 4', 'FullCalendar', 'Chart.js'];
     const photoAddresses = [
         new PhotoAddress(0, "stock/accounts-view.PNG"),

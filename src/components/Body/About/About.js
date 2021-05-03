@@ -54,7 +54,7 @@ const about = () => {
                         NERD program, where my NERDathon team achieved 3rd place out of 15 teams.
                     </p>
                     <p>
-                        Before Schwab, I attended the University of Tennessee, where I graduated Magna Cum Laude with a B.S. in Computer Science
+                        Before Schwab, I grew up between Palo Alto, CA and Bethesda, MD prior to attending the University of Tennessee, where I graduated Magna Cum Laude with a B.S. in Computer Science
                         and a minor in Cybersecurity. I was also a member of the National Society of Leadership and Success.
                     </p>
                     <p>

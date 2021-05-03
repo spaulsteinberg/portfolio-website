@@ -1,14 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
-import classes from './NavBar.module.css';
+import styles from './NavBar.module.css';
 
 const navbar = ({modalClick}) => {
+    const navBarStyles = `navbar navbar-dark ${styles.NavBar}`
     return (
         <React.Fragment>
-            <nav className="navbar navbar-dark bg-dark justify-content-start">
-                <NavLink exact activeStyle={{color: '#fe9677'}} activeClassName={classes.NavlinkActive} className="navbar-brand current-page mx-2" to="/">Portfolio</NavLink>
+            <nav className={navBarStyles}>
+                <NavLink exact activeStyle={{color: '#fe9677'}} activeClassName={styles.NavlinkActive} className="navbar-brand current-page mx-2" to="/">Portfolio</NavLink>
                 <NavLink activeStyle={{color: '#fe9677'}} className="navbar-brand current-page mx-2" to="/about">About</NavLink>
-                <button className={classes.NavButton} onClick={modalClick}>Contact</button>
+                <button className={styles.NavButton} onClick={modalClick}>Contact</button>
                 <NavLink activeStyle={{color: '#fe9677'}} className="navbar-brand current-page mx-2" to="/resume">Resume</NavLink>
             </nav>
         </React.Fragment>

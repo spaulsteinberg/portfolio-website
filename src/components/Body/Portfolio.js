@@ -18,11 +18,7 @@ const Portfolio = () => {
         },
         {
             id: 3,
-            title: 'Portfolio Website',
-            description: 'This website :)',
-            stack: ['React.js', 'JavaScript', 'Bootstrap 4'],
             cover: 'portfolio/cover-alt.PNG',
-            photoAddresses: [],
             extension: paths.PORTFOLIO
         },
         {

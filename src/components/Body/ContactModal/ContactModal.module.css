@@ -3,3 +3,15 @@
     align-items: center;
     justify-content: center;
 }
+
+.SuccessBox, .ErrorBox {
+    margin-bottom: 1%;
+}
+
+.SuccessBox {
+    color: #28a745
+}
+
+.ErrorBox {
+    color: #dc3545
+}

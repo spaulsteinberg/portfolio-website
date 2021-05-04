@@ -7,7 +7,8 @@ import classes from './About.module.css';
 
 const about = () => {
     let imageClass = `col-md-5 offset-md-1 ${classes.AboutImage}`;
-    let textClass = `col-md-4 lead ${classes.AboutText}`;
+    let textClass = `col-md-4 lead project-body ${classes.AboutText}`;
+    const imageBootstrapStyles = "img-fluid img-thumbnail rounded";
     console.log(window.screen.height, window.screen.width)
     let imageSizes = {
         headshot: {
@@ -28,11 +29,10 @@ const about = () => {
             width: window.screen.width * .13
         }
     }
-    const imageBootstrapStyles = "img-fluid img-thumbnail rounded";
     return (
         <React.Fragment>
             <div className="row text-center justify-content-center text-white">
-                <h2 className="display-4 m-4">About Me</h2>
+                <h2 className="display-3 m-4">About Me</h2>
             </div>
             <div className="row text-white mt-3">
                 <div className={imageClass}>

@@ -5,6 +5,9 @@ import PhotoAddress from '../../../models/PhotoAddress';
 import ImageCarousel from './sub-components/ImageCarousel';
 
 const AnimationProject = () => {
+    React.useEffect(() => {
+        window.scrollTo(0,0)
+    })
     const title = 'CSS - SVG Animations';
     const subTitleText = "Pure CSS/HTML Animations Powered by SVG3";
     const backgroundTitleImage = "first-proj/cover-alt.PNG";

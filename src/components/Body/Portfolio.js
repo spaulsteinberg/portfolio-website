@@ -30,7 +30,7 @@ const Portfolio = () => {
     return (
         <React.Fragment>
             <Header />
-            <div className="row">
+            <div className="row justify-content-center">
                 {projects.map(project => <ProjectTile key={project.id} 
                                                   cover={project.cover} 
                                                   extension={project.extension} />)}

@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import classes from './ProjectTile.module.css'
 
-const ProjectTile = ({cover, extension, title}) => {
-    let containerStyles = `col col-md-6 ${classes.ProjectContainer}`;
+const ProjectTile = ({cover, extension}) => {
+    let containerStyles = `col-6 ${classes.ProjectContainer}`;
     let contentStyles = `${classes.Project} text-center`;
     let buttonLinkStyles = `${classes.ViewButton} btn btn-lg`
     let pathConfiguration = `/projects${extension}`

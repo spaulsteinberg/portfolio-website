@@ -26,3 +26,86 @@ a.navbar-brand.current-page:hover {
   margin: 0;
   padding: 0;
 }
+
+.jumbotron-sub-display {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.jumbotron-display {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.sub-header {
+  opacity: .75;
+  font-size: 1.75rem;
+}
+
+.project-title {
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.project-body {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 1100px) {
+  .project-title {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+  .jumbotron-sub-display {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .jumbotron-sub-display {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .jumbotron-display {
+    font-size: 2.5rem;
+  }
+  .sub-header {
+    font-size: .98rem;
+  }
+
+  .project-title {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .project-body{
+    font-size: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .jumbotron-sub-display {
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+  .jumbotron-display {
+    font-size: 1.75rem;
+    line-height: 1;
+  }
+  .sub-header {
+    font-size: .8rem;
+  }
+  .project-title {
+    font-size: 1.75rem;
+    line-height: 1;
+  }
+  .project-body{
+    font-size: .8rem !important;
+  }
+}

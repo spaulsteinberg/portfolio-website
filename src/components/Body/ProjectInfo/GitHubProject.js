@@ -5,6 +5,9 @@ import ImageCarousel from './sub-components/ImageCarousel';
 import PhotoAddress from '../../../models/PhotoAddress';
 
 const GithubProject = () => {
+    React.useEffect(() => {
+        window.scrollTo(0,0)
+    })
     const title = 'GitHub-Infused Personal Site';
     const subTitleText = "A website that mixes GitHub code, Google Analytics, and a portfolio all in one.";
     const backgroundImage = "github/sm.png";

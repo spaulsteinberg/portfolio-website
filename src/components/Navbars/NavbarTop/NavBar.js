@@ -9,7 +9,7 @@ const navbar = ({modalClick}) => {
             <nav className={navBarStyles}>
                 <NavLink exact activeStyle={{color: '#fe9677'}} activeClassName={styles.NavlinkActive} className="navbar-brand current-page mx-2" to="/">Portfolio</NavLink>
                 <NavLink activeStyle={{color: '#fe9677'}} className="navbar-brand current-page mx-2" to="/about">About</NavLink>
-                <button className={styles.NavButton} onClick={modalClick}>Contact</button>
+                <button className={styles.NavButton} onClick={modalClick} id="contact-nav-top">Contact</button>
                 <NavLink activeStyle={{color: '#fe9677'}} className="navbar-brand current-page mx-2" to="/resume">Resume</NavLink>
             </nav>
         </React.Fragment>

@@ -18,6 +18,7 @@
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+    text-align: left;
 }
 
 .NavButton:hover {

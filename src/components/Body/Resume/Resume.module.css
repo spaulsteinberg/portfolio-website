@@ -6,10 +6,19 @@
     height: 100vh;
     padding: 0 0 7% 0;
 }
-
+.FrameContainer {
+    height: 85vh;
+    width: 90%;
+    padding-bottom: 5vh;
+}
 .ResumeIFrame {
     border: none;
-    height: 100vh;
-    width: 100%;
-    padding-bottom: 5vh;
+    height: 100%;
+    width: inherit;
+}
+
+@media screen and (max-height: 830px) {
+    .FrameContainer {
+        display: none;
+    }
 }

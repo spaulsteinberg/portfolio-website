@@ -1,9 +1,6 @@
-.Footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    justify-content: space-around;
-}
+ .Footer {
+    justify-content: center;
+} 
 
 .NavLink {
     color: #17a2b8 !important;

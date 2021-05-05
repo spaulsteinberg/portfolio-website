@@ -14,7 +14,7 @@
 .ProjectContainer {
     padding-bottom: 1%;
     height: 40vh;
-    overflow: hidden;
+    overflow: auto;
 }
 .ViewButton {
     color: red;
@@ -33,3 +33,11 @@
         box-shadow: 0 0 0 3rem rgba(255,165,0, 0);
     }
 }
+
+/* Fit as many windows as possible resizing height to match width of container */
+@media (min-width: 1502px) {.ProjectContainer {height: 43vh;}}
+@media (max-width: 1201px) and (min-width: 768px){.ProjectContainer {height: 36vh;}}
+@media (max-width: 768px) and (min-width: 500px){.ProjectContainer {height: 34vh;}}
+@media (max-width: 500px) and (min-width: 400px){.ProjectContainer {height: 28vh;}}
+@media (max-width: 400px) and (min-width: 300px) {.ProjectContainer {height: 25vh;}}
+@media (max-width: 300px) and (min-width: 100px){.ProjectContainer {height: 20vh;}}

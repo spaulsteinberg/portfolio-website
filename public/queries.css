@@ -52,18 +52,13 @@
 }
 
 @media (max-width: 576px) and (min-width: 500px) {
-    .col-6 {
-        -ms-flex: 0 0 75%;
-        flex: 0 0 75%;
-        max-width: 75%;
-    }
     .btn-lg {
         font-size: .9rem;
     }
 }
 
 
-@media (max-width: 768px) and (min-width: 576px) {
+@media (max-width: 768px) and (min-width: 500px) {
     .col-6 {
         -ms-flex: 0 0 85%;
         flex: 0 0 85%;
@@ -72,5 +67,16 @@
 
     .btn-lg {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    .col-6 {
+        -ms-flex: 0 0 90%;
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+    .btn-lg {
+        font-size: 1.25rem;
     }
 }

@@ -1,24 +1,13 @@
 import React from 'react';
-import classes from './Footer.module.css';
-import linkedin_icon from '../../../assets/images/linkedin.png';
-import github_logo from '../../../assets/images/github.png';
-import gmail_icon from '../../../assets/images/gmail_icon.png'
+import NavIcons from '../NavIcons/NavIcons';
+import styles from './Footer.module.css';
 
 const footer = () => {
-    let navClass = `navbar navbar-dark bg-dark text-info ${classes.Footer}`
-    const onClickCopy = () => {
-        console.log("copied: spaulsteinberg@gmail.com")
-    }
+    let navClass = `navbar navbar-dark bg-dark text-info ${styles.Footer}`;
     return (
-        <div className={classes.NavContainer}>
+        <div className={styles.NavContainer}>
             <nav className={navClass}>
-                <span><img src={gmail_icon} alt="gmail.png" className="mx-2" onClick={onClickCopy}/></span>
-                <a className={classes.NavLink} href="https://www.linkedin.com/in/samuel-steinberg-3a028b156/" target="_blank" rel="noreferrer">
-                    <img src={linkedin_icon} alt="linkedin512.png" className="mx-2"/>
-                </a>
-                <a className={classes.NavLink} href="https://github.com/spaulsteinberg" target="_blank" rel="noreferrer">
-                    <img src={github_logo} alt="github_logo.png" className="mx-2"/>
-                </a>
+                <NavIcons />
             </nav>
         </div>
     )

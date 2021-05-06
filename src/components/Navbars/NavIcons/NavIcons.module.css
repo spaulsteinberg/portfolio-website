@@ -1,0 +1,12 @@
+.NavLink {
+    color: #17a2b8 !important;
+    text-decoration: none;
+    margin: 0 .5rem !important;
+}
+
+/* When navbar goes into hamburger menu - add some more vertical spacing */
+@media screen and (max-width:992px) {
+    .NavLink {
+        margin: .5rem .5rem !important;
+    }
+}

@@ -2,11 +2,6 @@
     justify-content: center;
 } 
 
-.NavLink {
-    color: #17a2b8 !important;
-    text-decoration: none;
-}
-
 .NavContainer {
     padding-top: 3%;
 }

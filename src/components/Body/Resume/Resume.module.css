@@ -17,6 +17,7 @@
     width: inherit;
 }
 
+/* dont show iframe on small screens - just link to download */
 @media screen and (max-height: 830px) {
     .FrameContainer {
         display: none;

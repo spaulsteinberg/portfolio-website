@@ -27,12 +27,14 @@ a.navbar-brand.current-page:hover {
   padding: 0;
 }
 
+/* for headers like Summary, Tech Stack -- mirrors display-4 from Bootstrap */
 .jumbotron-sub-display {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
+/* for larger jumbotron text like greeting and project title pages */
 .jumbotron-display {
   font-size: 4.5rem;
   font-weight: 300;
@@ -91,7 +93,7 @@ a.navbar-brand.current-page:hover {
 
 @media only screen and (max-width: 500px) {
   .jumbotron-sub-display {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     line-height: 1;
   }
   .jumbotron-display {
@@ -107,5 +109,22 @@ a.navbar-brand.current-page:hover {
   }
   .project-body{
     font-size: .8rem !important;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .jumbotron-sub-display {
+    font-size: .9rem;
+    line-height: 1;
+  }
+  .jumbotron-display {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .project-title {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .project-body{
+    font-size: .75rem !important;
   }
 }

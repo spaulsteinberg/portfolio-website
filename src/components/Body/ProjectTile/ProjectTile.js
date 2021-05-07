@@ -17,4 +17,4 @@ const ProjectTile = ({cover, extension}) => {
         </div>
     )
 }
-export default ProjectTile;
+export default React.memo(ProjectTile);

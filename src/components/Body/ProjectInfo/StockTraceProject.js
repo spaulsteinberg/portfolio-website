@@ -13,10 +13,11 @@ const StockTraceProject = () => {
     const stack = ['Angular 9', 'TypeScript', 'JavaScript', 'Python', 'Node.js', 'Express.js', 'RxJS 6', 'D3.js','JWT authentication', 'Angular Material',
             'MongoDB', 'IEX Cloud Console', 'Bootstrap 4', 'FullCalendar', 'Chart.js'];
     const photoAddresses = [
-        new PhotoAddress(0, "stock/accounts-view.PNG"),
+        new PhotoAddress(12, "stock/stock-trace-home.PNG"),
         new PhotoAddress(1, "stock/compare-dividends.PNG", "IEX Cloud API discontinued earnings endpoint :("),
         new PhotoAddress(2, "stock/stock-trace-onboarding.PNG"),
         new PhotoAddress(3, "stock/d3js-dash.PNG"),
+        new PhotoAddress(0, "stock/accounts-view.PNG"),
         new PhotoAddress(4, "stock/ex-dividend-calendar.PNG"),
         new PhotoAddress(5, "stock/compare-charts.PNG"),
         new PhotoAddress(6, "stock/d3interactive2.PNG"),
@@ -25,7 +26,6 @@ const StockTraceProject = () => {
         new PhotoAddress(9, "stock/mygains-portal.PNG"),
         new PhotoAddress(10, "stock/realtime-ticker.PNG"),
         new PhotoAddress(11, "stock/realtime-watchlist.PNG"),
-        new PhotoAddress(12, "stock/stock-trace-home.PNG"),
     ];
     const backgroundTitleImage = "stock/compare-charts-crop.png";
     const titleDisplayColor = "white";

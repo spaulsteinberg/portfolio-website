@@ -6,7 +6,7 @@ import ImageCarousel from './sub-components/ImageCarousel';
 
 const StockTraceProject = () => {
     React.useEffect(() => {
-    window.scrollTo(0,0)
+        window.scrollTo(0,0)
     })
     const title = "StockTrace"
     const subTitleText = "A lightweight tool to track growth and experiment in a risk-free environment.";

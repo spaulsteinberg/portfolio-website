@@ -152,7 +152,7 @@ class ContactModal extends Component {
     render() {
         let { show } = this.props;
         return (
-            <Modal show={show} onHide={this.onHideAndCloseHandler}>
+            <Modal show={show} onHide={this.onHideAndCloseHandler} className="text-dark">
                 <Modal.Header closeButton>
                     <Modal.Title>Contact</Modal.Title>
                 </Modal.Header>

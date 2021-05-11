@@ -4,8 +4,7 @@ import styles from './Resume.module.css'
 
 const resume = () => {
     const resumePath = `${process.env.PUBLIC_URL}/pdfs/ResumeSamuelSteinberg.pdf`;
-    const frameContainerStyles = `col col-md-8 offset-md-2 ${styles.FrameContainer}`
-    console.log(window.screen.height)
+    const frameContainerStyles = `col col-md-8 offset-md-2 ${styles.FrameContainer}`;
     return (
         <div className={styles.Resume}>
             <div className="m-3">

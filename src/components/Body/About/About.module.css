@@ -5,4 +5,12 @@
 
 .AboutText {
     text-align: left;
+    padding: 0 15px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
+
+@media (min-width: 768px) { .AboutText {-ms-flex: 0 0 90%;flex: 0 0 90%;max-width: 90%;} }
+
+@media (min-width: 992px) {.AboutText {-ms-flex: 0 0 70%;flex: 0 0 70%;max-width: 70%;}}

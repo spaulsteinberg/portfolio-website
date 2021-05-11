@@ -18,7 +18,7 @@ const InfoBody = ({description, stack}) => {
                     </ul>
                 </div>
                 <div className={styles.TechStackInline}>
-                    {stack.map( (s, i) => <span key={`${s} +`}>{i !== stack.length-1 ? `${s}, ` : s}</span>)}
+                    {stack.map( (s, i) => <span key={`${s}`}>{i !== stack.length-1 ? `${s}, ` : s}</span>)}
                 </div>
             </div>
         </div>

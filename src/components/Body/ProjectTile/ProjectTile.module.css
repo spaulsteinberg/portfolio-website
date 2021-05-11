@@ -43,4 +43,4 @@
 @media (max-width: 400px) and (min-width: 300px) {.ProjectContainer {height: 25vh;}}
 @media (max-width: 300px) and (min-width: 100px){.ProjectContainer {height: 20vh;}}
 /* fix height when on a smaller screen so items dont bunch up */
-@media (max-height: 700px){.ProjectContainer{height: 175px}}
+@media (max-height: 650px){.ProjectContainer{height: 175px}}

@@ -19,7 +19,7 @@ const navbar = ({modalClick}) => {
                         <NavLink activeStyle={{color: '#fe9677'}} className="navbar-brand current-page mx-2" to="/resume">Resume</NavLink>
                     </div>
                     <div className="navbar-nav">
-                        <NavIcons />
+                        <span><NavIcons /></span>
                     </div>
                 </div>
             </nav>

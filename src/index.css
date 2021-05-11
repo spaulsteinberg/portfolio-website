@@ -91,6 +91,25 @@ a.navbar-brand.current-page:hover {
   }
 }
 
+/* cover most instances where there is a small height */
+@media only screen and (max-width: 1500px) and (max-height: 430px){
+  .jumbotron-sub-display {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+  .jumbotron-display {
+    font-size: 2rem;
+  }
+  .sub-header {
+    font-size: .8rem;
+  }
+
+  .project-title {
+    font-size: 2rem;
+    line-height: 1;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .jumbotron-sub-display {
     font-size: 1.1rem;

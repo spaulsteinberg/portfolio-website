@@ -9,7 +9,7 @@ const resume = () => {
     return (
         <div className={styles.Resume}>
             <div className="m-3">
-                <h2 className="display-3">My Resume</h2>
+                <h2 className="jumbotron-display">My Resume</h2>
                 <p className="project-body">Can't see the frame or just want to download it? Click
                     <span> </span>
                     <a href={resumePath} download="samuel_steinberg_resume" style={{textDecoration: 'underline'}}>here.</a>

@@ -5,3 +5,13 @@
 .NavContainer {
     padding-top: 3%;
 }
+
+/* set navbar sticky on wide screens */
+@media screen and (min-width: 800px) and (min-height: 600px){
+    .Footer {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}

@@ -45,6 +45,13 @@
     margin-bottom: 1%;
 }
 
+.TechStackList {
+    display: flex;
+}
+.TechStackInline {
+    display: none;
+}
+
 @media screen and (max-width: 300px) and (min-width: 200px) {
     .InfoHeader {
         height: 17vh;
@@ -52,6 +59,15 @@
     
     .CarouselItem {
         height: 25vh;
+    }
+    ul {
+        padding: 2% 45%;
+    }
+    .TechStackList {
+        display: none;
+    }
+    .TechStackInline {
+        display: block;
     }
 }
 @media screen and (max-width: 480px) and (min-width: 300px) {
@@ -61,10 +77,28 @@
     .CarouselItem {
         height: 30vh;
     }
+    ul {
+        padding: 2% 35%;
+    }
+    .TechStackList {
+        display: none;
+    }
+    .TechStackInline {
+        display: block;
+    }
 }
 @media screen and (max-width: 600px) and (min-width: 480px) {
     .InfoHeader {
         height: 22vh;
+    }
+    ul {
+        padding: 2% 25%;
+    }
+    .TechStackList {
+        display: none;
+    }
+    .TechStackInline {
+        display: block;
     }
 }
 @media screen and (max-width: 768px) and (min-width: 600px) {
@@ -74,6 +108,15 @@
     /* on mobile landscape mode */
     .CarouselItem {
         height: 350px;
+    }
+    ul {
+        padding: 2% 15%;
+    }
+    .TechStackList {
+        display: none;
+    }
+    .TechStackInline {
+        display: block;
     }
 }
 

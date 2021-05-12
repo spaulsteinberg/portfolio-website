@@ -14,6 +14,10 @@
     margin: auto;
 }
 
+.SummaryBorder {
+    border-bottom: 1px solid green;
+}
+
 .Carousel {
     width: 100%;
 }
@@ -127,6 +131,9 @@
     .CarouselItem {
         height: 35vh;
     }
+    .SummaryBorder {
+        border-right: 1px solid green;
+    }
 }
 @media screen and (max-width: 1200px) and (min-width: 992px) {
     .InfoHeader {
@@ -134,5 +141,13 @@
     }
     .CarouselItem {
         height: 40vh;
+    }
+    .SummaryBorder {
+        border-right: 1px solid green;
+    }
+}
+@media screen and (min-width: 1201px) {
+    .SummaryBorder {
+        border-right: 1px solid green;
     }
 }

@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-//error boundaries are higher order components which wrap a component to handle any errors a component might throw
-// only cover the components they are wrapped around
 class ErrorBoundary extends Component {
     state = {
         hasError: false

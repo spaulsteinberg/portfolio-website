@@ -1,19 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import classes from './ProjectTile.module.css'
+import styles from './ProjectTile.module.css'
 
 const ProjectTile = ({cover, extension}) => {
-    let containerStyles = `col-6 ${classes.ProjectContainer}`;
-    let contentStyles = `${classes.Project} text-center`;
-    let buttonLinkStyles = `${classes.ViewButton} btn btn-lg`
-    let pathConfiguration = `/projects${extension}`
+    let pathConfiguration = `/projects${extension}`;
+    let imagePath = `${process.env.PUBLIC_URL}/public-project-images/${cover}`;
+    let imageClasses = `${styles.Image} mb-1`;
+    let container = `${styles.LinkContainer}`
     return (
-        <div className={containerStyles} >     
-            <div className={contentStyles} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/public-project-images/${cover})`}}>
-                <Link to={pathConfiguration} >
-                    <button className={buttonLinkStyles}>View Project</button>
-                </Link>
-            </div>
+        <div className={container}>
+            <Link to={pathConfiguration}>
+                <img className={imageClasses} src={imagePath} alt="cover-pic.png"/>
+            </Link>
         </div>
     )
 }

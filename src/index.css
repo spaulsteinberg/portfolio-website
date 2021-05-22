@@ -9,11 +9,6 @@ body {
   color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 a.navbar-brand.current-page:hover {
   color: #b82601;
 }
@@ -45,6 +40,7 @@ a.navbar-brand.current-page:hover {
 .sub-header {
   opacity: .75;
   font-size: 1.75rem;
+  font-weight: 250;
 }
 
 .project-title {
@@ -56,6 +52,17 @@ a.navbar-brand.current-page:hover {
 .project-body {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 769px){
+  .portfolio-container { flex-direction: column;}
 }
 
 @media only screen and (max-width: 1100px) {

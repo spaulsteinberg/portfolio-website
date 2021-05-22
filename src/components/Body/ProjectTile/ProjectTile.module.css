@@ -1,46 +1,17 @@
-.Project {
-    color: white;
+.Image {
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: auto;
 }
 
-.ProjectContainer {
-    padding-bottom: 1%;
-    height: 40vh;
-    overflow: auto;
-}
-.ViewButton {
-    color: red;
-    animation: ripple 2s infinite .5s;
-}
-.ViewButton:hover {
-    border: 1px solid orange;
-    color: orange;
+.LinkContainer {
+    width: 100vw;
+    height: auto;
+    margin: 1% 0;
 }
 
-@keyframes ripple {
-    0% {
-        box-shadow: 0 0 0 .7rem rgba(255,165,0, 0.2);
-    }
-    100% {
-        box-shadow: 0 0 0 3rem rgba(255,165,0, 0);
+@media (min-width: 770px) {
+    .LinkContainer {
+        width: 45vw;
+        margin: 1% 1%;
     }
 }
-
-/* Fit as many windows as possible resizing height to match width of container */
-@media (min-width: 1502px) {.ProjectContainer {height: 43vh;}}
-@media (max-width: 1201px) and (min-width: 768px){.ProjectContainer {height: 36vh;}}
-@media (max-width: 768px) and (min-width: 600px){.ProjectContainer {height: 34vh;}}
-@media (max-width: 600px) and (min-width: 500px){.ProjectContainer {height: 30vh;}}
-@media (max-width: 500px) and (min-width: 400px){.ProjectContainer {height: 28vh;}}
-@media (max-width: 400px) and (min-width: 300px) {.ProjectContainer {height: 25vh;}}
-@media (max-width: 300px) and (min-width: 100px){.ProjectContainer {height: 20vh;}}
-/* fix height when on a smaller screen so items dont bunch up */
-@media (max-height: 650px){.ProjectContainer{height: 175px}}

@@ -12,54 +12,63 @@
 .BodyText {color: white;text-align: left;justify-content: left;padding: 3% 0 1% 0;}
 .CarouselHeader {color: #28a745 !important;justify-content: center;text-align: center;margin-bottom: 1%;}
 .HeaderContainer {text-align: center; margin: auto;}
-.SummaryBorder { border-bottom: var(--primary-border)}
+.SummaryBorder { border-bottom: var(--primary-border); border-right: none;}
 .TechStackBorder { border-bottom: var(--primary-border)}
 .Carousel {width: 100%;}
-.CarouselItem {width: 100%;height: 50vh;}
+.CarouselItem {width: 100%;height: auto}
 .CarouselItem:hover {cursor: grab;}
-.ItemContainer {text-align: center;}
-.TechStackList {display: flex;}
-.TechStackInline {display: none;}
+.ItemContainer {text-align: center; width: 100%; height: auto; padding: 0}
+.TechStackList {display: none;}
+.TechStackInline {display: block;}
+.SliderContainer { width: 100%;}
+.SliderRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    padding-bottom: 5%;
+}
+
+.TechStackColumn {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 3% 15px 3% 15px;
+}
+
+@media (min-width: 769px) {
+    .TechStackColumn {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .SliderContainer {
+        width: 75%;
+        /* prevent slide overflow */
+        padding: 5px;
+    }
+    .SummaryBorder {border-right: var(--primary-border)}
+    .TechStackList {display: flex;}
+    .TechStackInline {display: none;}
+}
 
 @media screen and (max-width: 300px) and (min-width: 200px) {
     .InfoHeader {height: 17vh;}
-    .CarouselItem {height: 25vh;}
-    ul {padding: 2% 45%;}
-    .TechStackList {display: none;}
-    .TechStackInline {display: block;}
 }
 @media screen and (max-width: 480px) and (min-width: 300px) {
     .InfoHeader {height: 15vh;}
-    .CarouselItem {height: 30vh;}
-    ul {padding: 2% 35%;}
-    .TechStackList {display: none;}
-    .TechStackInline {display: block;}
 }
 @media screen and (max-width: 600px) and (min-width: 480px) {
     .InfoHeader {height: 22vh;}
-    ul {padding: 2% 25%;}
-    .TechStackList {display: none;}
-    .TechStackInline {display: block;}
 }
 @media screen and (max-width: 768px) and (min-width: 600px) {
     .InfoHeader {height: 115px;}
-    /* on mobile landscape mode */
-    .CarouselItem {height: 350px;}
-    ul {padding: 2% 15%;}
-    .TechStackList {display: none;}
-    .TechStackInline {display: block;}
 }
 
- @media screen and (max-width: 992px) and (min-width: 768px) {
+ @media screen and (max-width: 992px) and (min-width: 769px) {
     .InfoHeader {height: 30vh;}
-    .CarouselItem {height: 35vh;}
-    .SummaryBorder {border-right: var(--primary-border)}
     .TechStackBorder {border-bottom: none;}
 }
-@media screen and (max-width: 1200px) and (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .InfoHeader {height: 35vh;}
-    .CarouselItem {height: 40vh;}
-    .SummaryBorder {border-right: var(--primary-border)}
     .TechStackBorder {border-bottom: none;}
 }
-@media screen and (min-width: 1201px) {.SummaryBorder {border-right: var(--primary-border)} .TechStackBorder {border-bottom: none;}}

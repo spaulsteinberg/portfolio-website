@@ -12,7 +12,7 @@ const GithubProject = () => {
     const subTitleText = "A website that mixes GitHub code, Google Analytics, and a portfolio all in one.";
     const backgroundImage = "github/sm.png";
     const titleDisplayColor = "purple";
-    const stack = ['Angular 9', 'Typescript', 'GitHub API', 'Node.js', 'Express.js', 'RxJS 6', 'Google Analytics', 'Google Analytics API',
+    const stack = ['Angular 9', 'Typescript', 'GitHub API', 'Node.js', 'Express.js', 'RxJS 6', 'Google Analytics',
                 'SQL', 'Twilio', 'Nodemailer', 'Bootstrap 4', 'Chart.js'];
     const description = `
                 <p>
@@ -34,15 +34,15 @@ const GithubProject = () => {
                     and also work on lesser viewed pages.
                 </p>`;
     const photoAddresses = [
-        new PhotoAddress(0, "github/analytics-data.PNG"),
-        new PhotoAddress(1, "github/analytics-home.PNG"),
-        new PhotoAddress(2, "github/commit-table.PNG"),
-        new PhotoAddress(3, "github/commits-chart.PNG"),
-        new PhotoAddress(4, "github/cover.PNG"),
-        new PhotoAddress(5, "github/contact-page.PNG"),
-        new PhotoAddress(6, "github/language-chart.PNG"),
-        new PhotoAddress(7, "github/navigation-screen.PNG"),
-        new PhotoAddress(8, "github/visitors-chart.PNG"),
+        new PhotoAddress(0, "github/analytics-data16-9.PNG"),
+        new PhotoAddress(1, "github/analytics-home16-9.PNG"),
+        new PhotoAddress(2, "github/commit-table16-9.PNG"),
+        new PhotoAddress(3, "github/commits-chart16-9.PNG"),
+        new PhotoAddress(4, "github/cover16-9.PNG"),
+        new PhotoAddress(5, "github/contact-page16-9.PNG"),
+        new PhotoAddress(6, "github/language-chart16-9.PNG"),
+        new PhotoAddress(7, "github/navigation-screen16-9.PNG"),
+        new PhotoAddress(8, "github/visitors-chart16-9.PNG"),
     ];
     return (
         <React.Fragment>

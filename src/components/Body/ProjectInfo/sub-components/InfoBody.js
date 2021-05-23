@@ -4,7 +4,7 @@ import styles from './ProjectInfo.module.css';
 const InfoBody = ({description, stack}) => {
     const bodyContainerStyles = `row project-body ${styles.BodyText}`;
     const summaryStyles = `${styles.SummaryBorder} col-md-8 offset-md-1`;
-    const stackListStyles = `${styles.TechStackBorder} col-3`
+    const stackListStyles = `${styles.TechStackBorder} ${styles.TechStackColumn}`
     return (
         <div className={bodyContainerStyles}>
             <div className={summaryStyles}>

@@ -16,8 +16,7 @@ class ImageCarousel extends Component {
     }
 
     configureSliderItems = () => {
-        let imageClasses = `${styles.ItemContainer} img-fluid`;
-        return this.props.images.map(image => <div key={image.address} className={imageClasses}>
+        return this.props.images.map(image => <div key={image.address} className={styles.ItemContainer}>
                             <img className={styles.CarouselItem} alt="carousel-item" src={`${process.env.PUBLIC_URL}/public-project-images/${image.address}`} />
                             {image.additionalInfo ? <small className="text-danger">*{image.additionalInfo}</small> : null}
                         </div>
@@ -54,8 +53,8 @@ class ImageCarousel extends Component {
                 <div className={headerStyle}>
                     <h1 className="jumbotron-sub-display">Gallery</h1>
                 </div>
-                <div className="row">
-                    <div className="col col-md-6 offset-md-3 p-0">
+                <div className={styles.SliderRow}>
+                    <div className={styles.SliderContainer}>
                         <Slider {...this.state} className={styles.Carousel}>
                             {this.configureSliderItems()}
                         </Slider>

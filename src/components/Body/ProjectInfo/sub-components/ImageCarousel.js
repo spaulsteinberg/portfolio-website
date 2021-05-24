@@ -34,6 +34,7 @@ class ImageCarousel extends Component {
         }
     }
     componentDidMount(){
+        console.log("mounted")
         // media queries match with 'matches' property on event
         this.windowWidthCheck = window.matchMedia("(max-width: 768px)").addEventListener("change", this.toggleArrows, true);
     }

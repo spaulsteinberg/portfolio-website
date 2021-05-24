@@ -68,7 +68,7 @@
     .InfoHeader {height: 30vh;}
     .TechStackBorder {border-bottom: none;}
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
     .InfoHeader {height: 35vh;}
     .TechStackBorder {border-bottom: none;}
 }

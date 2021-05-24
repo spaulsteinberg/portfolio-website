@@ -2,7 +2,7 @@
     width: calc(100vw - (100vw - 100%));
     overflow-x: auto;
     justify-content: start;
-    background-color: #343a40!important;
+    background-color: #b1b1b1!important;
 }
 
 .NavButton {
@@ -20,7 +20,12 @@
     white-space: nowrap;
     text-align: left;
 }
-
+.Toggler {
+    border-color: whitesmoke !important;
+}
 .NavButton:hover {
     color: #b82601;
+}
+@media (max-width: 992px) {
+    .NavBar {background-color: #9d9d9d !important;}
 }

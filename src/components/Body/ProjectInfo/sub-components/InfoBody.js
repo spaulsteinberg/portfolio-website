@@ -8,11 +8,11 @@ const InfoBody = ({description, stack}) => {
     return (
         <div className={bodyContainerStyles}>
             <div className={summaryStyles}>
-                <h1 className="jumbotron-sub-display text-success">Summary</h1>
+                <h1 className="jumbotron-sub-display text-warning">Summary</h1>
                 <div dangerouslySetInnerHTML={{__html: description}}></div>
             </div>
             <div className={stackListStyles}>
-                <h1 className="jumbotron-sub-display text-success">Tech Stack</h1>
+                <h1 className="jumbotron-sub-display text-warning">Tech Stack</h1>
                 <div className={styles.TechStackList}>
                     <ul>
                         {stack.map(s => <li key={s}>{s}</li>)}

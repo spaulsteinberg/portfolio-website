@@ -1,4 +1,4 @@
-:root {--primary-border: 1px solid green;}
+:root {--primary-border: 1px solid #ffc107;}
 .InfoHeader {
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,8 +9,8 @@
     justify-content: center;
     align-items: center;
 }
-.BodyText {color: white;text-align: left;justify-content: left;padding: 3% 0 1% 0;}
-.CarouselHeader {color: #28a745 !important;justify-content: center;text-align: center;margin-bottom: 1%;}
+.BodyText {text-align: left;justify-content: left;padding: 3% 0 1% 0;}
+.CarouselHeader {color: #ffc107!important; opacity: 0.9;justify-content: center;text-align: center;margin-bottom: 1%; padding: 1% 0;}
 .HeaderContainer {text-align: center; margin: auto;}
 .SummaryBorder { border-bottom: var(--primary-border); border-right: none;}
 .TechStackBorder { border-bottom: var(--primary-border)}
@@ -32,7 +32,7 @@
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 3% 15px 3% 15px;
+    padding: 3% 15px;
 }
 
 @media (min-width: 769px) {
@@ -40,6 +40,7 @@
         -ms-flex: 0 0 25%;
         flex: 0 0 25%;
         max-width: 25%;
+        padding: 0 15px;
     }
     .SliderContainer {
         width: 75%;

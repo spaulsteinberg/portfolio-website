@@ -4,11 +4,12 @@ import NavIcons from '../NavIcons/NavIcons';
 import styles from './NavBar.module.css';
 
 const navbar = ({modalClick}) => {
-    const navBarStyles = `navbar navbar-expand-lg navbar-dark ${styles.NavBar}`
+    const navBarStyles = `navbar navbar-expand-lg navbar-dark ${styles.NavBar}`;
+    const togglerStyles = `${styles.Toggler} navbar-toggler`
     return (
         <React.Fragment>
             <nav className={navBarStyles}>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button className={togglerStyles} type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" style={{height: '1rem', width: '1rem'}}></span>
                 </button>
                 <div className="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">

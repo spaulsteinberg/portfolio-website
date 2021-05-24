@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #062F4F;
-  color: white;
+  background-color: #b1b1b1;
+  color: #557a95;
 }
 
 a.navbar-brand.current-page:hover {

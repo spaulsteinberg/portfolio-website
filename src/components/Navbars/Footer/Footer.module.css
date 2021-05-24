@@ -7,7 +7,7 @@
 }
 
 /* set navbar sticky on wide screens */
-@media screen and (min-width: 800px) and (min-height: 600px){
+@media screen and (min-width: 992px) and (min-height: 600px){
     .Footer {
         position: fixed;
         right: 0;

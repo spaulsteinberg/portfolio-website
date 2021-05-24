@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react';
 import classes from './Header.module.css';
 
 const header = () => {
@@ -10,7 +9,7 @@ const header = () => {
             <p className="sub-header" style={{marginBottom: '0.5rem'}}>
                 I am a full-stack developer based in Austin, TX currently working in Angular 8/9 and .Net Core at Charles Schwab.
                 My side projects are primarily developed using the MEAN (Mongo, Express, Angular, Node.js) stack with a passion
-                for learning about new and emerging technologies. You can view my <Link to="/resume" className={classes.ResumeLink}>resume here</Link>.
+                for learning about new and emerging technologies.
             </p>
             <p className="sub-header">
                 Click on any tile below to view more information.

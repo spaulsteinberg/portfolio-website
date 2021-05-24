@@ -24,7 +24,7 @@
     border-color: whitesmoke !important;
 }
 .NavButton:hover {
-    color: #b82601;
+    color: #808080;
 }
 @media (max-width: 992px) {
     .NavBar {background-color: #9d9d9d !important;}

@@ -1,0 +1,84 @@
+:root {
+    --primary-title-color: white;
+}
+.HeadingContainer { padding: 2%;}
+.Logo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.LogoRow {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4%;
+}
+.LogoColumn {
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+}
+.OffsetDescription {
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+}
+.DescriptionColumn {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+}
+.ResumeDownloadImage {
+    width: 30px;
+    height: 30px;
+}
+.ResumeDownloadContainer {
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+}
+.DescriptionTitles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--primary-title-color);
+    padding-bottom: 1%;
+}
+.EducationSchoolInfo {
+    color: var(--primary-title-color);
+    line-height: 1.2;
+    font-size: 1rem;
+}
+.EducationSchoolAccomplishments {
+    text-align: left;
+}
+
+@media screen and (max-width: 769px){
+    .HeadingContainer {
+        text-align: center;
+    }
+    .LogoRow {
+        flex-direction: column;
+    }
+    .Logo {
+        width: 50%;
+        justify-content: center;
+        padding-bottom: 2%;
+    }
+    .DescriptionColumn {
+        text-align: left;
+    }
+    li {
+        line-height: 1;
+    }
+    .DescriptionTitles {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .DescriptionTitles {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    ul {
+        padding-left: 20px;
+    }
+}

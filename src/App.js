@@ -2,7 +2,7 @@ import './App.css';
 import React, { Component } from 'react';
 import Root from './components/Root';
 import About from './components/Body/About/About';
-import Resume from './components/Body/Resume/Resume';
+import Experience from './components/Body/Experience/Experience';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NotFound from './components/Body/NotFound';
 import Portfolio from './components/Body/Portfolio';
@@ -41,8 +41,8 @@ class App extends Component {
             <Route exact path="/about">
               <About />
             </Route>
-            <Route exact path="/resume">
-              <Resume />
+            <Route exact path="/experience">
+              <Experience />
             </Route>
             <Route path="/projects/:project" render={renderProps => this.renderDynamicProjectPaths(renderProps.match.params.project)} />
             <Route exact path="*">

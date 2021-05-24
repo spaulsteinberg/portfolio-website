@@ -14,10 +14,10 @@ const navbar = ({modalClick}) => {
                 </button>
                 <div className="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <NavLink exact activeStyle={{color: '#fe9677'}} activeClassName={styles.NavlinkActive} className="navbar-brand current-page mx-2" to="/">Portfolio</NavLink>
-                        <NavLink activeStyle={{color: '#fe9677'}} className="navbar-brand current-page mx-2" to="/about">About</NavLink>
+                        <NavLink exact activeStyle={{color: '#808080'}} className="navbar-brand current-page mx-2" to="/">Portfolio</NavLink>
+                        <NavLink activeStyle={{color: '#808080'}} className="navbar-brand current-page mx-2" to="/about">About</NavLink>
                         <button className={styles.NavButton} onClick={modalClick} id="contact-nav-top">Contact</button>
-                        <NavLink activeStyle={{color: '#fe9677'}} className="navbar-brand current-page mx-2" to="/resume">Resume</NavLink>
+                        <NavLink activeStyle={{color: '#808080'}} className="navbar-brand current-page mx-2" to="/experience">Experience</NavLink>
                     </div>
                     <div className="navbar-nav">
                         <span><NavIcons /></span>

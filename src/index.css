@@ -52,6 +52,7 @@ a.navbar-brand.current-page:hover {
 .project-body {
   font-size: 1.25rem;
   font-weight: 300;
+  line-height: 1.2;
 }
 
 .portfolio-container {

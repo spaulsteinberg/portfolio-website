@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from './ProjectInfo.module.css';
+import DownloadIcon from '../../Download/DownloadIcon';
 
 class ImageCarousel extends Component {
 
@@ -34,7 +35,6 @@ class ImageCarousel extends Component {
         }
     }
     componentDidMount(){
-        console.log("mounted")
         // media queries match with 'matches' property on event
         this.windowWidthCheck = window.matchMedia("(max-width: 768px)").addEventListener("change", this.toggleArrows, true);
     }
@@ -49,6 +49,7 @@ class ImageCarousel extends Component {
     }
     render() {
         const headerStyle = `row ${styles.CarouselHeader}`;
+        const iconStyles = `${styles.ResumeDownloadContainer} project-body`
         return (
             <React.Fragment>
                 <div className={headerStyle}>
@@ -61,6 +62,9 @@ class ImageCarousel extends Component {
                         </Slider>
                     </div>
                 </div>
+            <div className={iconStyles}>
+                <DownloadIcon path={this.props.zipFilePath} downloadName={this.props.zipFileName}>Download Full Gallery</DownloadIcon>
+            </div>
             </React.Fragment>
         )
     }

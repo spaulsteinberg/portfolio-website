@@ -32,11 +32,13 @@ const AnimationProject = () => {
                 Note that the quality is not as sharp as it should be, since free gif libraries tend to not yield the 
                 finest quality &#128578;.
             </p>`;
+    const downloadFileName = "Animation_Gallery_SPS";
+    const downloadFilePath = `${process.env.PUBLIC_URL}/public-project-images/first-proj/animation_export.zip`
     return (
         <React.Fragment>
             <InfoHeader title={title} subTitleText={subTitleText} backgroundImg={backgroundTitleImage} display={display} />
             <InfoBody description={description} stack={stack} />
-            <ImageCarousel images={photoAddresses} />
+            <ImageCarousel images={photoAddresses} zipFileName={downloadFileName} zipFilePath={downloadFilePath}/>
         </React.Fragment>
     )
 }

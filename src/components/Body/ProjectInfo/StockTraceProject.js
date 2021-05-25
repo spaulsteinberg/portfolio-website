@@ -14,14 +14,11 @@ const StockTraceProject = () => {
             'MongoDB', 'IEX Cloud Console', 'Bootstrap 4', 'FullCalendar', 'Chart.js'];
     const photoAddresses = [
         new PhotoAddress(12, "stock/stock-trace-home16-91.PNG"),
-        new PhotoAddress(1, "stock/compare-dividends16-91.PNG", "IEX Cloud API discontinued earnings endpoint :("),
         new PhotoAddress(2, "stock/stock-trace-onboarding16-91.PNG"),
         new PhotoAddress(3, "stock/d3js-dash16-91.PNG"),
         new PhotoAddress(0, "stock/accounts-view16-91.PNG"),
         new PhotoAddress(4, "stock/ex-dividend-calendar16-91.PNG"),
         new PhotoAddress(5, "stock/compare-charts16-91.PNG"),
-        new PhotoAddress(6, "stock/d3interactive216-91.PNG"),
-        new PhotoAddress(7, "stock/customize-watchlist16-91.PNG"),
         new PhotoAddress(8, "stock/latest-trending16-91.PNG"),
         new PhotoAddress(9, "stock/mygains-portal16-9.PNG"),
         new PhotoAddress(10, "stock/realtime-ticker16-9.PNG"),
@@ -54,12 +51,14 @@ const StockTraceProject = () => {
             Robinhood account). They can then add and remove positions and accounts as necessary. Access to cultivated charts 
             are only a click away, where users can see their largest accounts, postitions, and see a cumulation of their combined accounts.
             There is also a realtime chart retrieving the latest quotes every 5 seconds for experimentation purposes and finding the best time to buy and maximize profit.
-        </p>`
+        </p>`;
+    const downloadFileName = "Stock_Trace_Gallery_SPS";
+    const downloadFilePath = `${process.env.PUBLIC_URL}/public-project-images/stock/stock_visual_images.zip`
     return (
         <React.Fragment>
             <InfoHeader title={title} subTitleText={subTitleText} backgroundImg={backgroundTitleImage} display={titleDisplayColor}/>
             <InfoBody description={description} stack={stack} />
-            <ImageCarousel images={photoAddresses} />
+            <ImageCarousel images={photoAddresses} zipFileName={downloadFileName} zipFilePath={downloadFilePath}/>
         </React.Fragment>
     )
 }

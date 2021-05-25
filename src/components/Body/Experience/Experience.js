@@ -4,10 +4,10 @@ import schwab_logo from '../../../assets/logos/Charles_Schwab_Corporation-Logo-l
 import schwab_logo_mobile from '../../../assets/logos/Charles_Schwab_Corporation-Logo-short.png';
 import att_logo from '../../../assets/logos/AT&T-Logo-sm.png';
 import lev_logo from '../../../assets/logos/Lev-Logo16-c-4.png';
-import download_icon from '../../../assets/images/download-icon.png';
 import ExperienceTile from './sub-components/ExperienceTile';
 import EducationTile from './sub-components/EducationTile';
 import SkillTile from './sub-components/SkillTile';
+import DownloadIcon from '../Download/DownloadIcon';
 const experience = () => {
     const resumePath = `${process.env.PUBLIC_URL}/pdfs/ResumeSamuelSteinberg.pdf`;
     const roles = [
@@ -90,7 +90,7 @@ const experience = () => {
     }
     const skillsAndCerts = [languages, frameworksAndLibraries, hybrids, computerApps, certifications]
     return (
-        <div>
+        <div className="project-body">
             <div className={styles.HeadingContainer}>
                 <h1 className="jumbotron-display text-warning">Roles</h1>
                 {roles.map(role => <div key={role.role} className={styles.LogoRow}><ExperienceTile job={role}/></div>)}
@@ -104,10 +104,7 @@ const experience = () => {
                 {skillsAndCerts.map(skc => <SkillTile key={skc.title} item={skc} />)}
             </div>
             <div className={styles.ResumeDownloadContainer}>
-                <a href={resumePath} download="samuel_steinberg_resume">
-                    <img className={styles.ResumeDownloadImage} src={download_icon} alt="Download Icon.png"/>
-                    <p style={{marginBottom: '0'}}>Download Resume</p>
-                </a>
+                <DownloadIcon path={resumePath} downloadName="samuel_steinberg_resume">Download Resume</DownloadIcon>
             </div>
         </div>
     )

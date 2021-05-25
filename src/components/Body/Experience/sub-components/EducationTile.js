@@ -26,4 +26,4 @@ const EducationTile = ({school}) => {
     )
 }
 
-export default EducationTile;
+export default React.memo(EducationTile);

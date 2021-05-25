@@ -34,21 +34,21 @@ const GithubProject = () => {
                     and also work on lesser viewed pages.
                 </p>`;
     const photoAddresses = [
-        new PhotoAddress(0, "github/analytics-data16-9.PNG"),
-        new PhotoAddress(1, "github/analytics-home16-9.PNG"),
-        new PhotoAddress(2, "github/commit-table16-9.PNG"),
-        new PhotoAddress(3, "github/commits-chart16-9.PNG"),
         new PhotoAddress(4, "github/cover16-9.PNG"),
+        new PhotoAddress(3, "github/commits-chart16-9.PNG"),
         new PhotoAddress(5, "github/contact-page16-9.PNG"),
         new PhotoAddress(6, "github/language-chart16-9.PNG"),
         new PhotoAddress(7, "github/navigation-screen16-9.PNG"),
         new PhotoAddress(8, "github/visitors-chart16-9.PNG"),
+        new PhotoAddress(9, "github/background-page16-19.png")
     ];
+    const downloadFileName = "Github_Port_Gallery_SPS";
+    const downloadFilePath = `${process.env.PUBLIC_URL}/public-project-images/github/Github_Portfolio_Project_Export.zip`
     return (
         <React.Fragment>
             <InfoHeader title={title} subTitleText={subTitleText} backgroundImg={backgroundImage} display={titleDisplayColor}/>
             <InfoBody description={description} stack={stack} />
-            <ImageCarousel images={photoAddresses} />
+            <ImageCarousel images={photoAddresses} zipFileName={downloadFileName} zipFilePath={downloadFilePath}/>
         </React.Fragment>
     )
 }

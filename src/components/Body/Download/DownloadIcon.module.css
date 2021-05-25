@@ -1,0 +1,14 @@
+.ResumeDownloadImage {
+    width: 20px;
+    height: 20px
+}
+p {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 500px){
+    .ResumeDownloadImage {
+        width: 30px;
+        height: 30px;
+    }
+}

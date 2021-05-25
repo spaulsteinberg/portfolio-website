@@ -13,4 +13,4 @@ const SkillTile = (props) => {
     )
 }
 
-export default SkillTile;
+export default React.memo(SkillTile);

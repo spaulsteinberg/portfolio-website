@@ -1,11 +1,6 @@
 import React from 'react';
 import styles from './ProjectInfo.module.css';
-/* <div className={styles.InfoHeader} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/public-project-images/${backgroundImg})`, color: display}}>
-                <div className={styles.HeaderContainer}>
-                    <h2 className="project-title m-1">{title}</h2>
-                    <h4 className="jumbotron-sub-display m-1">{subTitleText}</h4>
-                </div>
-            </div> */
+
 const InfoHeader = ({title, subTitleText, backgroundImg, display}) => {
     const imageSource = `${process.env.PUBLIC_URL}/public-project-images/${backgroundImg}`;
     return (

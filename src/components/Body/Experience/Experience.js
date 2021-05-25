@@ -71,7 +71,7 @@ const experience = () => {
     };
     const frameworksAndLibraries = {
         title: "Frameworks and Libraries",
-        content: ['Angular 2+', 'React', 'JQuery', 'Node.js', 'Express.js', '.NET Core', 'Linux', 'Selenium Webdriver']
+        content: ['Angular 2+', 'ReactJS', 'JQuery', 'Node.js', 'Express.js', '.NET Core', 'Linux', 'Selenium Webdriver']
     };
     const hybrids = {
         title: "Database Languages and Utilities",
@@ -80,7 +80,7 @@ const experience = () => {
     const computerApps = {
         title: "Computer Programs and Apps",
         content: [
-            'VS Code', 'Visual Studio', 'Git', 'SVN', 'PyCharm', 'IntellIJ', 'PyQt Designer', 'Studio 3T', 'Mongo Atlas',
+            'VS Code', 'Visual Studio', 'Git', 'SVN', 'PyCharm', 'IntellIJ', 'PyQt Designer', 'Studio 3T',
             'Microsoft Office'
         ]
     };

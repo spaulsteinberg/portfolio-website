@@ -27,7 +27,7 @@ const StockTraceProject = () => {
         new PhotoAddress(10, "stock/realtime-ticker16-9.PNG"),
         new PhotoAddress(11, "stock/realtime-watchlist16-91.PNG"),
     ];
-    const backgroundTitleImage = "stock/compare-charts-crop.png";
+    const backgroundTitleImage = "stock/compare-charts-crop-alt.png";
     const titleDisplayColor = "white";
     const description = `
         <p>

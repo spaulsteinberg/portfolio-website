@@ -13,16 +13,16 @@ const StockTraceProject = () => {
     const stack = ['Angular 9', 'TypeScript', 'JavaScript', 'Python', 'Node.js', 'Express.js', 'RxJS 6', 'D3.js','JWT authentication', 'Angular Material',
             'MongoDB', 'IEX Cloud Console', 'Bootstrap 4', 'FullCalendar', 'Chart.js'];
     const photoAddresses = [
-        new PhotoAddress(12, "stock/stock-trace-home16-91.PNG"),
-        new PhotoAddress(2, "stock/stock-trace-onboarding16-91.PNG"),
-        new PhotoAddress(3, "stock/d3js-dash16-91.PNG"),
-        new PhotoAddress(0, "stock/accounts-view16-91.PNG"),
-        new PhotoAddress(4, "stock/ex-dividend-calendar16-91.PNG"),
-        new PhotoAddress(5, "stock/compare-charts16-91.PNG"),
-        new PhotoAddress(8, "stock/latest-trending16-91.PNG"),
-        new PhotoAddress(9, "stock/mygains-portal16-9.PNG"),
-        new PhotoAddress(10, "stock/realtime-ticker16-9.PNG"),
-        new PhotoAddress(11, "stock/realtime-watchlist16-91.PNG"),
+        new PhotoAddress(12, "stock/stock-trace-home16-91.png"),
+        new PhotoAddress(2, "stock/stock-trace-onboarding16-91.png"),
+        new PhotoAddress(3, "stock/d3js-dash16-91.png"),
+        new PhotoAddress(0, "stock/accounts-view16-91.png"),
+        new PhotoAddress(4, "stock/ex-dividend-calendar16-91.png"),
+        new PhotoAddress(5, "stock/compare-charts16-91.png"),
+        new PhotoAddress(8, "stock/latest-trending16-91.png"),
+        new PhotoAddress(9, "stock/mygains-portal16-9.png"),
+        new PhotoAddress(10, "stock/realtime-ticker16-9.png"),
+        new PhotoAddress(11, "stock/realtime-watchlist16-91.png"),
     ];
     const backgroundTitleImage = `${process.env.PUBLIC_URL}/public-project-images/stock/compare-charts-crop-alt1.png`;
     const titleDisplayColor = "white";

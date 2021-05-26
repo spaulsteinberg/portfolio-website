@@ -34,12 +34,12 @@ const GithubProject = () => {
                     and also work on lesser viewed pages.
                 </p>`;
     const photoAddresses = [
-        new PhotoAddress(4, "github/cover16-9.PNG"),
-        new PhotoAddress(3, "github/commits-chart16-9.PNG"),
-        new PhotoAddress(5, "github/contact-page16-9.PNG"),
-        new PhotoAddress(6, "github/language-chart16-9.PNG"),
-        new PhotoAddress(7, "github/navigation-screen16-9.PNG"),
-        new PhotoAddress(8, "github/visitors-chart16-9.PNG"),
+        new PhotoAddress(4, "github/cover16-9.png"),
+        new PhotoAddress(3, "github/commits-chart16-9.png"),
+        new PhotoAddress(5, "github/contact-page16-9.png"),
+        new PhotoAddress(6, "github/language-chart16-9.png"),
+        new PhotoAddress(7, "github/navigation-screen16-9.png"),
+        new PhotoAddress(8, "github/visitors-chart16-9.png"),
         new PhotoAddress(9, "github/background-page16-19.png")
     ];
     const downloadFileName = "Github_Port_Gallery_SPS";

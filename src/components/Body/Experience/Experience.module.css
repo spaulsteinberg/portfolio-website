@@ -1,5 +1,10 @@
 :root {
     --primary-title-color: white;
+    --title-margin: .5rem;
+    --main-display: flex;
+    --flex-medium: 0 0 50%;
+    --flex-small: 0 0 30%;
+    --flex-xsmall: 0 0 10%;
 }
 .HeadingContainer { padding: 2%;}
 .Logo {
@@ -8,21 +13,21 @@
     height: auto;
 }
 .LogoRow {
-    display: flex;
+    display: var(--main-display);
     flex-direction: row;
     padding-top: 4%;
 }
 .LogoColumn {
-    -ms-flex: 0 0 30%;
-    flex: 0 0 30%;
+    -ms-flex: var(--flex-small);
+    flex: var(--flex-small);
 }
 .OffsetDescription {
-    -ms-flex: 0 0 10%;
-    flex: 0 0 10%;
+    -ms-flex: var(--flex-xsmall);
+    flex: var(--flex-xsmall);
 }
 .DescriptionColumn {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
+    -ms-flex: var(--flex-medium);
+    flex: var(--flex-medium);
 }
 .ResumeDownloadImage {
     width: 30px;
@@ -35,16 +40,21 @@
 }
 .DescriptionTitles {
     display: flex;
-    flex-direction: row;
+    flex-direction: var(--main-display);
     justify-content: space-between;
     color: var(--primary-title-color);
-    padding-bottom: 1%;
+    margin-bottom: var(--title-margin);
 }
 .EducationSchoolInfo {
     color: var(--primary-title-color);
+    margin-bottom: var(--title-margin);
     line-height: 1.2;
-    font-size: 1rem;
 }
+
+.EducationSchoolInfo p {
+    margin-bottom: 0;
+}
+
 .EducationSchoolAccomplishments {
     text-align: left;
 }

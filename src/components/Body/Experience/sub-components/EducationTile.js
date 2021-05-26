@@ -2,9 +2,10 @@ import React from 'react'
 import styles from '../Experience.module.css';
 
 const EducationTile = ({school}) => {
+    const titleStyles = `${styles.EducationSchoolInfo} project-body`
     return (
         <React.Fragment>
-            <div className={styles.EducationSchoolInfo}>
+            <div className={titleStyles}>
                 <p>{school.name}</p>
                 <p>{school.location}</p>
                 <p>{school.datesAttended}</p>

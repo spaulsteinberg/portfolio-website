@@ -26,8 +26,8 @@ const about = () => {
                         </p>
                         <p>
                             I am passionate about full-stack development and jump on any opportunity to dive deeper into it.
-                            My portfolio here showcases my personal projects, and I have also been able to deliver applications
-                            in my work that have allowed me the opportunity to consistently learn new skills and tips as a developer.
+                            My portfolio here showcases my personal projects, and have also been able to deliver applications
+                            in my work that have allow for the opportunity to consistently learn new skills and techniques as a developer.
                             Outside of work, I enjoy cars, sports, food, and the outdoors.
                         </p>
                     </div>

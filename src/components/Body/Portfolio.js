@@ -8,7 +8,7 @@ const Portfolio = () => {
     [
         {
             id: 2,
-            cover: 'stock/stock-trace-home-sm.PNG',
+            cover: 'stock/stock-trace-home-sm1.PNG',
             extension: paths.STOCK
         },
         {
@@ -18,7 +18,7 @@ const Portfolio = () => {
         },
         {
             id: 3,
-            cover: 'portfolio/cover-alt.PNG',
+            cover: 'portfolio/cover-alt1.PNG',
             extension: paths.PORTFOLIO
         },
         {

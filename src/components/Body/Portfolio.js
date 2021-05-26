@@ -18,7 +18,7 @@ const Portfolio = () => {
         },
         {
             id: 3,
-            cover: 'portfolio/cover-alt1.PNG',
+            cover: 'portfolio/cover-alt1.png',
             extension: paths.PORTFOLIO
         },
         {

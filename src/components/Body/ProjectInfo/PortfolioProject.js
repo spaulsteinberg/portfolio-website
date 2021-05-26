@@ -9,7 +9,7 @@ const PortfolioProject = () => {
     const title = 'Portfolio Website';
     const subTitleText = "A showcasing of my personal projects, work experience, education, and skills.";
     const stack = ['ReactJS', 'JavaScript', 'JSX','CSS3', 'HTML5'];
-    const backgroundTitleImage = "portfolio/info-background-a.PNG";
+    const backgroundTitleImage = `${process.env.PUBLIC_URL}/public-project-images/portfolio/info-background-a.png`;
     const titleDisplayColor = "white";
     const description = `
         <p>

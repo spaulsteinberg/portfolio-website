@@ -10,7 +10,7 @@ const GithubProject = () => {
     })
     const title = 'GitHub-Infused Personal Site';
     const subTitleText = "A website that mixes GitHub code, Google Analytics, and a portfolio all in one.";
-    const backgroundImage = "github/sm-alt.png";
+    const backgroundImage = `${process.env.PUBLIC_URL}/public-project-images/github/sm-alt.png`;
     const titleDisplayColor = "white";
     const stack = ['Angular 9', 'Typescript', 'GitHub API', 'Node.js', 'Express.js', 'RxJS 6', 'Google Analytics',
                 'SQL', 'Twilio', 'Nodemailer', 'Bootstrap 4', 'Chart.js'];

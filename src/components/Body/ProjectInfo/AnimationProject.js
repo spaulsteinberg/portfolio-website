@@ -10,7 +10,7 @@ const AnimationProject = () => {
     })
     const title = 'CSS - SVG Animations';
     const subTitleText = "Pure CSS/HTML Animations Powered by SVG3";
-    const backgroundTitleImage = "first-proj/cover-alt.PNG";
+    const backgroundTitleImage = `${process.env.PUBLIC_URL}/public-project-images/first-proj/cover-alt.PNG`;
     const display = "white";
     const stack = ['HTML', 'CSS', 'SVG3'];
     const photoAddresses = [

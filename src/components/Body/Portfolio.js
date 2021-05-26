@@ -7,14 +7,14 @@ const Portfolio = () => {
     let projects = 
     [
         {
-            id: 1,
-            cover: 'github/cover-sm.PNG',
-            extension: paths.GITHUB
-        },
-        {
             id: 2,
             cover: 'stock/stock-trace-home-sm.PNG',
             extension: paths.STOCK
+        },
+        {
+            id: 1,
+            cover: 'github/cover-sm.PNG',
+            extension: paths.GITHUB
         },
         {
             id: 3,

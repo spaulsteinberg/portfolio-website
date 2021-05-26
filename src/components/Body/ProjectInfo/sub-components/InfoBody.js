@@ -9,7 +9,7 @@ const InfoBody = ({description, stack}) => {
         <div className={bodyContainerStyles}>
             <div className={summaryStyles}>
                 <h1 className="jumbotron-sub-display text-warning">Summary</h1>
-                <div dangerouslySetInnerHTML={{__html: description}}></div>
+                <div dangerouslySetInnerHTML={{__html: description}} style={{paddingBottom: '10px'}}></div>
             </div>
             <div className={stackListStyles}>
                 <h1 className="jumbotron-sub-display text-warning">Tech Stack</h1>

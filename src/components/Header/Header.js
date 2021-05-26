@@ -7,12 +7,12 @@ const header = () => {
         <div className={headerClasses.join(' ')}>
             <h2 className="jumbotron-display">Hi, I'm Sam. Welcome to my Portfolio.</h2>
             <p className="sub-header" style={{marginBottom: '0.5rem'}}>
-                I am a full-stack developer based in Austin, TX currently working in Angular 8/9 and .Net Core at Charles Schwab.
-                My side projects are primarily developed using the MEAN (Mongo, Express, Angular, Node.js) stack with a passion
-                for learning about new and emerging technologies.
+                I am a full-stack developer based in Austin, TX currently working for Charles Schwab.
+                I enjoy learning new programming languages, frameworks, libraries, and techniques.
+                This is my first ReactJS project - feel free to contact me.
             </p>
             <p className="sub-header">
-                Click on any tile below to view more information.
+                Click any project tile below to view more information.
             </p>
         </div>
     )

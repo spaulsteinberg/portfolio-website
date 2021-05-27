@@ -38,7 +38,6 @@ a.navbar-brand.current-page:hover {
 }
 
 .sub-header {
-  opacity: .75;
   font-size: 1.75rem;
   font-weight: 250;
 }
@@ -110,7 +109,7 @@ a.navbar-brand.current-page:hover {
     font-size: 2rem;
   }
   .sub-header {
-    font-size: .8rem;
+    font-size: 1rem;
   }
 
   .project-title {
@@ -129,7 +128,7 @@ a.navbar-brand.current-page:hover {
     line-height: 1;
   }
   .sub-header {
-    font-size: .8rem;
+    font-size: 1rem;
   }
   .project-title {
     font-size: 1.75rem;

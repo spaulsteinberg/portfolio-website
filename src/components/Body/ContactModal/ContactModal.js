@@ -31,8 +31,6 @@ class ContactModal extends Component {
             valid: null
         }
         this.baseState = {...this.state}
-        this.route = '/api/email/send'
-        this.baseRoute = 'http://localhost:3001'
     }
 
     sendButtonClickHandler = event => {
@@ -54,12 +52,12 @@ class ContactModal extends Component {
 
         let request = new PostContactRequest(this.state.firstName, this.state.lastName, this.state.email, this.state.message);
         this.setState({submit: {messageIsSending: true, messageSendSuccess: null,messageSendFailure: null,sentMessageResponse: null,errorMessageResponse: null}}) 
-
-        fetch(`${this.baseRoute}${this.route}`, {
+        fetch(process.env.REACT_APP_CONTACT_ENDPOINT, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-            },
+                'secret': process.env.REACT_APP_PRIVATE_KEY,
+            }, 
             body: JSON.stringify(request)
         })
         .then(response => {

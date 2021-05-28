@@ -16,10 +16,10 @@ const experience = () => {
             timeframe: "6/2020 - Present",
             team: "Status Team",
             descriptionEntries: [
-                "Developed and delivered notification services to advisors using RabbitMQ and MongoDB Changestreams hosted on .Net Core.",
-                "Developed a notification API to allow the notifications service to be consumed by multiple teams throughout Schwab.",
-                "Developed and delivered dashboard applications (UI and API) to save advisors time with a custom dashboard.",
-                "Contributed to the ability to offer status to firms and Transfer of Asset requests, leading to a significant increase of Status adoption.",
+                "Developed and delivered notification services to advisors using RabbitMQ and live MongoDB Changestreams",
+                "Contributed to developing a notification API to allow the notifications service to be consumed by other Schwab teams and third-party users.",
+                "Developed and delivered dashboard applications (UI and API) to save advisors time with a custom dashboard for status and alert requests.",
+                "Contributed to the ability to offer status to advisor firms and for Transfer of Asset requests, leading to a significant increase of Status page adoption.",
                 "Improved quality of codebase with unit testing, reaching organizational standards on code coverage on all applications.",
             ],
             logo: schwab_logo,
@@ -33,7 +33,7 @@ const experience = () => {
             logo: att_logo,
             alt: "AT&T Logo",
             descriptionEntries: [
-                "Wrote a scalable automation application supporting service request teams, bringing the time to submit service tickets down from 45+ minutes to seconds.",
+                "Wrote a scalable automation application supporting service request teams, bringing the time to submit service tickets down from 45+ minutes to a few seconds.",
                 "Created and maintained an application to support internal databases by ensuring and enhancing data integrity and prevent reliance on tainted data.",
                 "Implemented application user interfaces for easy use by internal teams.",
                 "Interfaced with users directly; implemented feedback, and trained other employees on how to use the applications."

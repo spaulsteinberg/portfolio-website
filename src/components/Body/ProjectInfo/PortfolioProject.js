@@ -8,39 +8,30 @@ const PortfolioProject = () => {
     })
     const title = 'Portfolio Website';
     const subTitleText = "A showcasing of my personal projects, work experience, education, and skills.";
-    const stack = ['ReactJS', 'JavaScript', 'JSX','CSS3', 'HTML5'];
+    const stack = ['ReactJS', 'Next.js','JavaScript', 'JSX', 'Bootstrap 4', 'CSS3', 'HTML5'];
     const backgroundTitleImage = `${process.env.PUBLIC_URL}/public-project-images/portfolio/info-background-a.png`;
     const titleDisplayColor = "white";
     const description = `
         <p>
-            Since your currently viewing this project, this section will be more of a retrospective than anything else. There are no images
-            necessary, and the reasoning for creating this website and portfolio as a learning experience rather than using a pre-made
-            template are explained below.
+            The purpose of this project was not only to create a portfolio showcasing past personal projects, work experience,
+            educational history and skills, but to reinforce React concepts through doing as opposed to watching more and more tutorial videos.
+            Skills such as learning this new library, responsive web design, and creating fast single-page applications are all important and relevant skills to utilize and practice, and 
+            more importantly offer the best user experience. The React Router is ideal for this, as links to pages can be set statically or dynamically
+            with fast rendering.
         </p>
         <p>
-            Creating my own portfolio from scratch has been something I've been wanting to do for a while, but hadn't found the time.
-            Between applying for jobs out of school, learning Angular and .NET for my job, and getting acclimated to 
-            a new phase of life, job, and city, it just didnt fit in my priorities.
+            Vercel, the creators of Next.js, was/is being used to deploy and host this website. Vercel is ideal for hosting React 
+            and Next.js applications, along with serverless functions. They also offer easy CI/CD with seamless GitHub repository integration.
+            In addition, adding environmental variables is easy and does not require any configuration files.
+            The Contact modal's submitted requests are routed to my serverless Next.js project function that is its handler. Due to
+            the nature of serverless functions, each request requires a new database connection as opposed to having a persistent connection,
+            a byproduct of which is slightly longer processing time. Logs and requests can be monitored on the Vercel dashboard.
         </p>
         <p>
-            Now that I'm past that, I was finally able to both create my portfolio and learn some of the fundamentals of ReactJS (React) and responsive web design.
-            React is the most in-demand library as of 2021, as well as the most dynamic library or framework I've used.
-        </p>
-        <p>
-            This is a responsive website that was designed mobile-first using CSS Flexbox. It uses the React Router 5.2 for seamless transitions
-            between pages, with responsive images, text, and sections depending on the device width (and sometimes height). Code and time 
-            were saved due to the heavy re-usability of React components, which allowed me to focus much more on design aspects of the portfolio
-            and learning the pillars of responsive design.
-        </p>
-        <p>
-            Additionally, while JSX was confusing at first it is very reliable and makes understanding 
-            where everything is in the DOM much simpler. React also has its own Dev Tools kit, where one can find the state of the component,
-            any props it has, children, etc.
-        </p>
-        <p>
-            Feel free to contact me with any feedback on the site by clicking 'Contact' in the navigation bar, 
-            or by direct Gmail, Linkedin message, or for code/stylistic criticisms by opening an issue on GitHub. You can find these 
-            links on either the top or bottom navigation bars.
+            Styling and responsiveness was completed in CSS3 and Bootstrap was used occassionally to save time and code. The layout
+            of the website will change depending on screen size, and breakpoints are supported for mobile portrait/landscape, 
+            tablet, laptop, and larger screens. The CSS layout being used is Flexbox, which now has Chrome Dev Tools support and is 
+            my favorite CSS web layout model, since it allows responsive elements and is easy to override with media queries as needed.
         </p>
     `;
     return (

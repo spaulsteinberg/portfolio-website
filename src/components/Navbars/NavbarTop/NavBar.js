@@ -8,7 +8,7 @@ const navbar = ({modalClick}) => {
     const togglerStyles = `${styles.Toggler} navbar-toggler`
     return (
         <React.Fragment>
-            <nav className={navBarStyles}>
+            <nav className={navBarStyles} role="navigation">
                 <button className={togglerStyles} type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" style={{height: '1rem', width: '1rem'}}></span>
                 </button>

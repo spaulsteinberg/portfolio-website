@@ -28,7 +28,7 @@ const PortfolioProject = () => {
             a byproduct of which is slightly longer processing time. Logs and requests can be monitored on the Vercel dashboard.
         </p>
         <p>
-            Styling and responsiveness was completed in CSS3 and Bootstrap was used occassionally to save time and code. The layout
+            Styling and responsiveness were completed in CSS3, and Bootstrap was used occassionally to save time and code. The layout
             of the website will change depending on screen size, and breakpoints are supported for mobile portrait/landscape, 
             tablet, laptop, and larger screens. The CSS layout being used is Flexbox, which now has Chrome Dev Tools support and is 
             my favorite CSS web layout model, since it allows responsive elements and is easy to override with media queries as needed.

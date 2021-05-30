@@ -158,26 +158,26 @@ class ContactModal extends Component {
                     <form>
                         <Form.Row>
                             <Col sm={{size: 5}}>
-                                <Form.Label>First Name<span className="text-danger">*</span></Form.Label>
-                                <FormControl type="text" name="firstName" value={this.state.firstName} onChange={this.inputTypeChangeHandler} />
+                                <Form.Label id="firstname-label">First Name<span className="text-danger">*</span></Form.Label>
+                                <FormControl aria-labelledby="firstname-label" type="text" name="firstName" value={this.state.firstName} onChange={this.inputTypeChangeHandler} />
                                 {this.showErrorSmallBlock(this.state.errors.firstName)}
                             </Col>
                             <Col sm={{size: 5, offset: 1}}>
-                                <Form.Label>Last Name<span className="text-danger">*</span></Form.Label>
-                                <FormControl type="text" name="lastName" value={this.state.lastName} onChange={this.inputTypeChangeHandler} />
+                                <Form.Label id="lastname-label">Last Name<span className="text-danger">*</span></Form.Label>
+                                <FormControl aria-labelledby="lastname-label" type="text" name="lastName" value={this.state.lastName} onChange={this.inputTypeChangeHandler} />
                                 {this.showErrorSmallBlock(this.state.errors.lastName)}
                             </Col>
                         </Form.Row>
                         <Form.Row>
                             <Col>
-                                <Form.Label>Email</Form.Label>
-                                <FormControl style={{width: '75%'}} type="email" name="email" value={this.state.email} onChange={this.inputTypeChangeHandler} />
+                                <Form.Label id="email-label">Email</Form.Label>
+                                <FormControl aria-labelledby="email-label" style={{width: '75%'}} type="email" name="email" value={this.state.email} onChange={this.inputTypeChangeHandler} />
                             </Col>
                         </Form.Row>
                         <Form.Row>
                             <Col>
-                                <Form.Label>Message<span className="text-danger">*</span></Form.Label>
-                                <FormControl as="textarea" name="message" value={this.state.message} onChange={this.inputTypeChangeHandler} onBlur={this.validateMessageOnBlur} />
+                                <Form.Label id="message-label">Message<span className="text-danger">*</span></Form.Label>
+                                <FormControl aria-labelledby="message-label" as="textarea" name="message" value={this.state.message} onChange={this.inputTypeChangeHandler} onBlur={this.validateMessageOnBlur} />
                                 {this.showErrorSmallBlock(this.state.errors.message)}
                             </Col>
                         </Form.Row>

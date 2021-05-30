@@ -6,7 +6,7 @@ const footer = () => {
     let navClass = `navbar navbar-dark bg-dark text-info ${styles.Footer}`;
     return (
         <div className={styles.NavContainer}>
-            <nav className={navClass}>
+            <nav className={navClass} role="navigation">
                 <NavIcons />
             </nav>
         </div>

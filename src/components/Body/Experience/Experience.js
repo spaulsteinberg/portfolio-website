@@ -4,6 +4,7 @@ import schwab_logo from '../../../assets/logos/Charles_Schwab_Corporation-Logo-l
 import schwab_logo_mobile from '../../../assets/logos/Charles_Schwab_Corporation-Logo-short.png';
 import att_logo from '../../../assets/logos/AT&T-Logo-sm.png';
 import lev_logo from '../../../assets/logos/Lev-Logo16-c-4.png';
+import ibm_logo from '../../../assets/logos/IBM-Logo.png'
 import ExperienceTile from './sub-components/ExperienceTile';
 import EducationTile from './sub-components/EducationTile';
 import SkillTile from './sub-components/SkillTile';
@@ -12,8 +13,18 @@ const experience = () => {
     const resumePath = `${process.env.PUBLIC_URL}/pdfs/ResumeSamuelSteinberg.pdf`;
     const roles = [
         {
+            role: "Full Stack Engineer",
+            timeframe: "10/2021 - Present",
+            team: "Early Programs Team",
+            descriptionEntries: [
+                "Developing next generation Early Programs Admin Tool to enable clients to push their products quicker and gain more exposure",
+            ],
+            logo: ibm_logo,
+            alt: "IBM Logo"
+        },
+        {
             role: "Software Engineer - Full Stack",
-            timeframe: "6/2020 - Present",
+            timeframe: "6/2020 - 10/2021",
             team: "Status Team",
             descriptionEntries: [
                 "Developed and delivered notification services to advisors using RabbitMQ and live MongoDB Changestreams",

@@ -16,9 +16,7 @@ const about = () => {
             <div className="row justify-content-center">
                 <div className={textClass}>
                         <p>
-                            I am currently a full-stack developer for the Charles Schwab Corporation,
-                            using Angular paired with .NET Core and both SQL and Mongo databases. I graduated from their 
-                            NERD program, where my NERDathon team achieved 3rd place out of 15 teams.
+                            I am currently a full-stack developer for the Early Programs team at IBM, where our stack is React, Java (Spring Framework), and Mongo. 
                         </p>
                         <p>
                             Before Schwab, I grew up between Palo Alto, CA and Bethesda, MD prior to attending the University of Tennessee, where I graduated Magna Cum Laude with a B.S. in Computer Science

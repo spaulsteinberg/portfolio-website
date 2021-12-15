@@ -71,7 +71,7 @@ const experience = () => {
     };
     const frameworksAndLibraries = {
         title: "Frameworks and Libraries",
-        content: ['Angular 2+', 'ReactJS', 'JQuery', 'Node.js', 'Express.js', '.NET Core', 'Selenium Webdriver']
+        content: ['Angular', 'ReactJS', 'JQuery', 'Node.js', 'Express.js', '.NET Core', 'Selenium Webdriver']
     };
     const hybrids = {
         title: "Database Languages and Utilities",

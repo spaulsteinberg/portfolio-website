@@ -16,16 +16,13 @@ const ExperienceTile = ({job}) => {
             <div className={styles.OffsetDescription}></div>
             <div className={styles.DescriptionColumn}>
                 <div className={styles.DescriptionTitles}>
-                    <span> {job.role} </span>
-                    <span> {job.timeframe}</span>
-                    <span> {job.team}</span>
+                    <span className={styles.RoleFlex}>{job.role}</span>
+                    <span className={styles.DateFlex}>{job.timeframe}</span>
+                    <span className={styles.TeamFlex}>{job.team}</span>
                 </div>
                 <div>
                     <ul>
-                        { job.descriptionEntries
-                            ? job.descriptionEntries.map(entry => <li key={entry}>{entry}</li>)
-                            : null 
-                        }
+                        { job.descriptionEntries ? job.descriptionEntries.map(entry => <li key={entry}>{entry}</li>) : null }
                     </ul>
                 </div>
             </div>

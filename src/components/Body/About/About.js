@@ -19,8 +19,9 @@ const about = () => {
                             I am currently a full-stack developer for the Early Programs team at IBM, where our stack is React, Java (Spring Framework), and Mongo. 
                         </p>
                         <p>
-                            Before Schwab, I grew up between Palo Alto, CA and Bethesda, MD prior to attending the University of Tennessee, where I graduated Magna Cum Laude with a B.S. in Computer Science
-                            and a minor in Cybersecurity. I was also a member of the National Society of Leadership and Success.
+                            Before IBM, I attended the University of Tennessee where I graduated Magna Cum Laude with a B.S. in Computer Science
+                            and a minor in Cybersecurity. I was also a member of the National Society of Leadership and Success. After Tennessee, 
+                            I began my career as a full-stack developer for Charles Schwab.
                         </p>
                         <p>
                             I am passionate about full-stack development and jump on any opportunity to dive deeper into it.

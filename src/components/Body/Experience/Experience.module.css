@@ -2,42 +2,51 @@
     --primary-title-color: white;
     --title-margin: .5rem;
     --main-display: flex;
-    --flex-medium: 0 0 50%;
+    --flex-medium: 0 0 55%;
     --flex-small: 0 0 30%;
     --flex-xsmall: 0 0 10%;
 }
+
 .HeadingContainer { padding: 2%;}
+
 .Logo {
     width: 100%;
     max-width: 100%;
     height: auto;
 }
+
 .LogoRow {
     display: var(--main-display);
     flex-direction: row;
     padding-top: 4%;
 }
+
 .LogoColumn {
     -ms-flex: var(--flex-small);
     flex: var(--flex-small);
 }
+
 .OffsetDescription {
     -ms-flex: var(--flex-xsmall);
     flex: var(--flex-xsmall);
 }
+
 .DescriptionColumn {
     -ms-flex: var(--flex-medium);
     flex: var(--flex-medium);
 }
+
 .ResumeDownloadImage {
     width: 30px;
     height: 30px;
 }
+
 .ResumeDownloadContainer {
     justify-content: center;
     text-align: center;
     padding: 2%;
 }
+
 .DescriptionTitles {
     display: flex;
     flex-direction: var(--main-display);
@@ -45,6 +54,7 @@
     color: var(--primary-title-color);
     margin-bottom: var(--title-margin);
 }
+
 .EducationSchoolInfo {
     color: var(--primary-title-color);
     margin-bottom: var(--title-margin);
@@ -57,6 +67,20 @@
 
 .EducationSchoolAccomplishments {
     text-align: left;
+}
+
+.RoleFlex {
+    flex: 0 0 35%;
+    margin-right: 2.5%;
+}
+
+.DateFlex {
+    flex: 0 0 25%;
+    margin-right: 2.5%;
+}
+
+.TeamFlex {
+    flex: 0 0 35%;
 }
 
 @media screen and (max-width: 769px){
@@ -79,6 +103,7 @@
     }
     .DescriptionTitles {
         justify-content: space-evenly;
+        text-align: center;
     }
 }
 

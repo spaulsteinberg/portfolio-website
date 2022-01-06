@@ -1,11 +1,16 @@
 import React from 'react';
 import Header from '../Header/Header';
 import {ProjectPaths as paths} from '../../constants/ProjectPaths';
-import ProjectTile from './ProjectTile/ProjectTile';
+import Tiles from './Tiles';
 
 const Portfolio = () => {
     let projects = 
     [
+        {
+            id: 5,
+            cover: 'rest-admin/home.png',
+            extension: paths.REST_ADMIN
+        },
         {
             id: 2,
             cover: 'stock/stock-trace-home-sm1.PNG',
@@ -30,11 +35,7 @@ const Portfolio = () => {
     return (
         <React.Fragment>
             <Header />
-            <div className="portfolio-container">
-                {projects.map(project => <ProjectTile key={project.id} 
-                                                  cover={project.cover} 
-                                                  extension={project.extension} />)}
-            </div>
+            <Tiles projects={projects} />
         </React.Fragment>
     )
 }

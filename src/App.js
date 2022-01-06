@@ -11,6 +11,7 @@ import GitHubProject from './components/Body/ProjectInfo/GitHubProject';
 import PortfolioProject from './components/Body/ProjectInfo/PortfolioProject';
 import StockTraceProject from './components/Body/ProjectInfo/StockTraceProject';
 import AnimationProject from './components/Body/ProjectInfo/AnimationProject';
+import RestAdminProject from './components/Body/ProjectInfo/RestAdminProject';
 
 class App extends Component {
 
@@ -25,6 +26,8 @@ class App extends Component {
         return <StockTraceProject />
       case ProjectPaths.ANIMATIONS:
         return <AnimationProject />
+      case ProjectPaths.REST_ADMIN:
+        return <RestAdminProject />
       default:
         return <NotFound />
     }

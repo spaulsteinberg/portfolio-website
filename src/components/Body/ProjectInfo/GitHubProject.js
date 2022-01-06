@@ -3,11 +3,10 @@ import InfoBody from './sub-components/InfoBody';
 import InfoHeader from './sub-components/InfoHeader';
 import ImageCarousel from './sub-components/ImageCarousel';
 import PhotoAddress from '../../../models/PhotoAddress';
+import useTop from '../../../hooks/useTop';
 
 const GithubProject = () => {
-    React.useEffect(() => {
-        window.scrollTo(0,0)
-    })
+    useTop();
     const title = 'GitHub-Infused Personal Site';
     const subTitleText = "A website that mixes GitHub code, Google Analytics, and a portfolio all in one.";
     const backgroundImage = `${process.env.PUBLIC_URL}/public-project-images/github/sm-alt.png`;

@@ -3,11 +3,10 @@ import InfoBody from './sub-components/InfoBody';
 import InfoHeader from './sub-components/InfoHeader';
 import PhotoAddress from '../../../models/PhotoAddress';
 import ImageCarousel from './sub-components/ImageCarousel';
+import useTop from '../../../hooks/useTop';
 
 const AnimationProject = () => {
-    React.useEffect(() => {
-        window.scrollTo(0,0)
-    })
+    useTop();
     const title = 'CSS - SVG Animations';
     const subTitleText = "Pure CSS/HTML Animations Powered by SVG3";
     const backgroundTitleImage = `${process.env.PUBLIC_URL}/public-project-images/first-proj/cover-alt.PNG`;

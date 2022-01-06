@@ -3,11 +3,10 @@ import PhotoAddress from '../../../models/PhotoAddress';
 import InfoHeader from './sub-components/InfoHeader';
 import InfoBody from './sub-components/InfoBody';
 import ImageCarousel from './sub-components/ImageCarousel';
+import useTop from '../../../hooks/useTop';
 
 const StockTraceProject = () => {
-    React.useEffect(() => {
-        window.scrollTo(0,0)
-    })
+    useTop();
     const title = "StockTrace"
     const subTitleText = "A lightweight tool to track growth and experiment in a risk-free environment.";
     const stack = ['Angular 9', 'TypeScript', 'JavaScript', 'Python', 'Node.js', 'Express.js', 'RxJS 6', 'D3.js','JWT authentication', 'Angular Material',

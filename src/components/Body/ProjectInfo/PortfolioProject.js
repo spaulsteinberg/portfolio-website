@@ -1,11 +1,10 @@
 import React from 'react';
+import useTop from '../../../hooks/useTop';
 import InfoBody from './sub-components/InfoBody';
 import InfoHeader from './sub-components/InfoHeader';
 
 const PortfolioProject = () => {
-    React.useEffect(() => {
-        window.scrollTo(0,0)
-    })
+    useTop();
     const title = 'Portfolio Website';
     const subTitleText = "A showcasing of my personal projects, work experience, education, and skills.";
     const stack = ['ReactJS', 'Next.js','JavaScript', 'JSX', 'Bootstrap 4', 'CSS3', 'HTML5'];
